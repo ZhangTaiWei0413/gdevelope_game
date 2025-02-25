@@ -225,13 +225,2828 @@
         "name": "GirlSprite\\Jump (10).png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Dead (1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Dead (1).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Dead (2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Dead (2).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Dead (3).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Dead (3).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Dead (4).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Dead (4).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Dead (5).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Dead (5).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Dead (6).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Dead (6).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Dead (7).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Dead (7).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Dead (8).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Dead (8).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Dead (9).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Dead (9).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Dead (10).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Dead (10).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Idle (1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Idle (1).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Idle (2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Idle (2).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Idle (3).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Idle (3).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Idle (4).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Idle (4).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Idle (5).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Idle (5).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Idle (6).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Idle (6).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Idle (7).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Idle (7).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Idle (8).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Idle (8).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Idle (9).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Idle (9).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Idle (10).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Idle (10).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Melee (1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Melee (1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Melee (2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Melee (2).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Melee (3).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Melee (3).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Melee (4).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Melee (4).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Melee (5).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Melee (5).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Melee (6).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Melee (6).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Melee (7).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Melee (7).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Shoot (1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Shoot (1).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Shoot (2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Shoot (2).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Shoot (3).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Shoot (3).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Slide (1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Slide (1).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Slide (2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Slide (2).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Slide (3).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Slide (3).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Slide (4).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Slide (4).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GirlSprite/Slide (5).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GirlSprite\\Slide (5).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "16pic_9368944_b.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "16pic_9368944_b.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "16pic_9368944_b (1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "16pic_9368944_b (1).png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
   },
-  "objects": [],
+  "objects": [
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "player",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "acceleration": 1500,
+          "canGoDownFromJumpthru": true,
+          "canGrabPlatforms": false,
+          "canGrabWithoutMoving": true,
+          "deceleration": 1500,
+          "gravity": 1000,
+          "ignoreDefaultControls": false,
+          "jumpSpeed": 600,
+          "jumpSustainTime": 0.2,
+          "ladderClimbingSpeed": 150,
+          "maxFallingSpeed": 700,
+          "maxSpeed": 250,
+          "name": "PlatformerObject",
+          "slopeMaxAngle": 60,
+          "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "useLegacyTrajectory": false,
+          "xGrabTolerance": 10,
+          "yGrabOffset": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Idle (1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Idle (2).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Idle (3).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Idle (4).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Idle (5).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Idle (6).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Idle (7).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Idle (8).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Idle (9).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Idle (10).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "run",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Run (1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Run (2).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Run (3).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Run (4).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Run (5).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Run (6).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Run (7).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Run (8).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "jump",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Jump (1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Jump (2).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Jump (3).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Jump (4).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Jump (5).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Jump (6).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Jump (7).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Jump (8).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Jump (9).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Jump (10).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "dead",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Dead (1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Dead (2).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Dead (3).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Dead (4).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Dead (5).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Dead (6).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Dead (7).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Dead (8).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Dead (9).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Dead (10).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "melee",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Melee (1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Melee (2).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Melee (3).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Melee (4).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Melee (5).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Melee (6).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Melee (7).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "shoot",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Shoot (1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Shoot (2).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Shoot (3).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "slide",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Slide (1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Slide (2).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Slide (3).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Slide (4).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GirlSprite\\Slide (5).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 61,
+                        "y": 12
+                      },
+                      {
+                        "x": 83.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 119,
+                        "y": 35
+                      },
+                      {
+                        "x": 117,
+                        "y": 144.5
+                      },
+                      {
+                        "x": 44,
+                        "y": 143.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "objectsFolderStructure": {
-    "folderName": "__ROOT"
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "player"
+      }
+    ]
   },
   "objectsGroups": [],
   "variables": [],
@@ -271,9 +3086,26 @@
           "name": "player",
           "persistentUuid": "460f4c4c-6ac8-44a9-b8d0-2c49668c019a",
           "width": 0,
-          "x": 265,
-          "y": 356,
+          "x": 262,
+          "y": 154,
           "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 475,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewTiledSprite",
+          "persistentUuid": "c4205c59-bb6d-4b93-a2e3-2bd97902c9cb",
+          "width": 1361,
+          "x": -22,
+          "y": 658,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -283,324 +3115,33 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "player",
+          "name": "NewSprite",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "canBeGrabbed": true,
+              "name": "Platform",
+              "platformType": "NormalPlatform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            }
+          ],
           "animations": [
             {
-              "name": "run",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "GirlSprite\\Run (1).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 55,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 149
-                          },
-                          {
-                            "x": 55,
-                            "y": 149
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "GirlSprite\\Run (2).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 55,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 149
-                          },
-                          {
-                            "x": 55,
-                            "y": 149
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "GirlSprite\\Run (3).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 55,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 149
-                          },
-                          {
-                            "x": 55,
-                            "y": 149
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "GirlSprite\\Run (4).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 55,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 149
-                          },
-                          {
-                            "x": 55,
-                            "y": 149
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "GirlSprite\\Run (5).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 55,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 149
-                          },
-                          {
-                            "x": 55,
-                            "y": 149
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "GirlSprite\\Run (6).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 55,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 149
-                          },
-                          {
-                            "x": 55,
-                            "y": 149
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "GirlSprite\\Run (7).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 55,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 149
-                          },
-                          {
-                            "x": 55,
-                            "y": 149
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "GirlSprite\\Run (8).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 55,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 149
-                          },
-                          {
-                            "x": 55,
-                            "y": 149
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "jump",
+              "name": "NewSprite",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": false,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "GirlSprite\\Jump (1).png",
+                      "image": "NewSprite3",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -616,344 +3157,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 55,
-                            "y": 12
+                            "x": 0,
+                            "y": 0
                           },
                           {
-                            "x": 148,
-                            "y": 12
+                            "x": 64,
+                            "y": 0
                           },
                           {
-                            "x": 148,
-                            "y": 149
+                            "x": 64,
+                            "y": 64
                           },
                           {
-                            "x": 55,
-                            "y": 149
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "GirlSprite\\Jump (2).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 55,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 149
-                          },
-                          {
-                            "x": 55,
-                            "y": 149
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "GirlSprite\\Jump (3).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 55,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 149
-                          },
-                          {
-                            "x": 55,
-                            "y": 149
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "GirlSprite\\Jump (4).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 55,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 149
-                          },
-                          {
-                            "x": 55,
-                            "y": 149
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "GirlSprite\\Jump (5).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 55,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 149
-                          },
-                          {
-                            "x": 55,
-                            "y": 149
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "GirlSprite\\Jump (6).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 55,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 149
-                          },
-                          {
-                            "x": 55,
-                            "y": 149
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "GirlSprite\\Jump (7).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 55,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 149
-                          },
-                          {
-                            "x": 55,
-                            "y": 149
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "GirlSprite\\Jump (8).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 55,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 149
-                          },
-                          {
-                            "x": 55,
-                            "y": 149
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "GirlSprite\\Jump (9).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 55,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 149
-                          },
-                          {
-                            "x": 55,
-                            "y": 149
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "GirlSprite\\Jump (10).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 55,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 12
-                          },
-                          {
-                            "x": 148,
-                            "y": 149
-                          },
-                          {
-                            "x": 55,
-                            "y": 149
+                            "x": 0,
+                            "y": 64
                           }
                         ]
                       ]
@@ -963,13 +3180,35 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "height": 475,
+          "name": "NewTiledSprite",
+          "texture": "16pic_9368944_b (1).png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 478,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "canBeGrabbed": true,
+              "name": "Platform",
+              "platformType": "NormalPlatform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
         "folderName": "__ROOT",
         "children": [
           {
-            "objectName": "player"
+            "objectName": "NewSprite"
+          },
+          {
+            "objectName": "NewTiledSprite"
           }
         ]
       },
@@ -979,28 +3218,204 @@
           "conditions": [
             {
               "type": {
-                "value": "DepartScene"
+                "value": "KeyPressed"
               },
               "parameters": [
-                ""
+                "",
+                "a"
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "PlayerAuthentication::DisplayAuthenticationBanner"
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
               },
               "parameters": [
-                ""
+                "player",
+                "Flippable",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "player",
+                "-",
+                "10"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "player",
+                "Animation",
+                "=",
+                "\"run\""
               ]
             }
           ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyReleased"
+              },
+              "parameters": [
+                "",
+                "a"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "player",
+                "Animation",
+                "=",
+                "\"idle\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "d"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "player",
+                "Flippable",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "player",
+                "+",
+                "10"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "player",
+                "Animation",
+                "=",
+                "\"run\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyReleased"
+              },
+              "parameters": [
+                "",
+                "d"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "player",
+                "Animation",
+                "=",
+                "\"idle\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Space"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlatformBehavior::IsOnFloor"
+              },
+              "parameters": [
+                "player",
+                "PlatformerObject"
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "PlatformBehavior::IsJumping"
+              },
+              "parameters": [
+                "player",
+                "PlatformerObject"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "player",
+                "Animation",
+                "=",
+                "\"jump\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateControl"
+              },
+              "parameters": [
+                "player",
+                "PlatformerObject",
+                "\"Jump\""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -1067,16 +3482,20 @@
           "type": "OpacityCapability::OpacityBehavior"
         },
         {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior"
+        },
+        {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior"
+        },
+        {
           "name": "Resizable",
           "type": "ResizableCapability::ResizableBehavior"
         },
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
-        },
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
         }
       ]
     }
