@@ -586,6 +586,30 @@
         "name": "2469740-blinky.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "2469740-blinky-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "2469740-blinky-2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "2469741-inky.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "2469741-inky.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "2469741-inky-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "2469741-inky-2.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -597,16 +621,32 @@
       "name": "player",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "isclimb",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "falling",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "touchfakeground",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior",
           "canGrabPlatforms": false,
           "ignoreDefaultControls": true,
           "jumpSpeed": 750,
           "ladderClimbingSpeed": 300,
-          "name": "PlatformerObject",
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
           "acceleration": 1500,
           "canGoDownFromJumpthru": true,
           "canGrabWithoutMoving": true,
@@ -1117,11 +1157,11 @@
                       },
                       {
                         "x": 87.5,
-                        "y": 145.5
+                        "y": 144.5
                       },
                       {
                         "x": 53,
-                        "y": 145.5
+                        "y": 144.5
                       }
                     ]
                   ]
@@ -1161,11 +1201,11 @@
                       },
                       {
                         "x": 87.5,
-                        "y": 145.5
+                        "y": 144.5
                       },
                       {
                         "x": 53,
-                        "y": 145.5
+                        "y": 144.5
                       }
                     ]
                   ]
@@ -1205,11 +1245,11 @@
                       },
                       {
                         "x": 87.5,
-                        "y": 145.5
+                        "y": 144.5
                       },
                       {
                         "x": 53,
-                        "y": 145.5
+                        "y": 144.5
                       }
                     ]
                   ]
@@ -1249,11 +1289,11 @@
                       },
                       {
                         "x": 87.5,
-                        "y": 145.5
+                        "y": 144.5
                       },
                       {
                         "x": 53,
-                        "y": 145.5
+                        "y": 144.5
                       }
                     ]
                   ]
@@ -1293,11 +1333,11 @@
                       },
                       {
                         "x": 87.5,
-                        "y": 145.5
+                        "y": 144.5
                       },
                       {
                         "x": 53,
-                        "y": 145.5
+                        "y": 144.5
                       }
                     ]
                   ]
@@ -1337,11 +1377,11 @@
                       },
                       {
                         "x": 87.5,
-                        "y": 145.5
+                        "y": 144.5
                       },
                       {
                         "x": 53,
-                        "y": 145.5
+                        "y": 144.5
                       }
                     ]
                   ]
@@ -1381,11 +1421,11 @@
                       },
                       {
                         "x": 87.5,
-                        "y": 145.5
+                        "y": 144.5
                       },
                       {
                         "x": 53,
-                        "y": 145.5
+                        "y": 144.5
                       }
                     ]
                   ]
@@ -1425,11 +1465,11 @@
                       },
                       {
                         "x": 87.5,
-                        "y": 145.5
+                        "y": 144.5
                       },
                       {
                         "x": 53,
-                        "y": 145.5
+                        "y": 144.5
                       }
                     ]
                   ]
@@ -1933,11 +1973,11 @@
                       },
                       {
                         "x": 122.5,
-                        "y": 163.5
+                        "y": 160.5
                       },
                       {
                         "x": 13,
-                        "y": 163.5
+                        "y": 160.5
                       }
                     ]
                   ]
@@ -1977,11 +2017,11 @@
                       },
                       {
                         "x": 122.5,
-                        "y": 163.5
+                        "y": 160.5
                       },
                       {
                         "x": 13,
-                        "y": 163.5
+                        "y": 160.5
                       }
                     ]
                   ]
@@ -2021,11 +2061,11 @@
                       },
                       {
                         "x": 122.5,
-                        "y": 163.5
+                        "y": 160.5
                       },
                       {
                         "x": 13,
-                        "y": 163.5
+                        "y": 160.5
                       }
                     ]
                   ]
@@ -2065,11 +2105,11 @@
                       },
                       {
                         "x": 122.5,
-                        "y": 163.5
+                        "y": 160.5
                       },
                       {
                         "x": 13,
-                        "y": 163.5
+                        "y": 160.5
                       }
                     ]
                   ]
@@ -2109,11 +2149,11 @@
                       },
                       {
                         "x": 122.5,
-                        "y": 163.5
+                        "y": 160.5
                       },
                       {
                         "x": 13,
-                        "y": 163.5
+                        "y": 160.5
                       }
                     ]
                   ]
@@ -2153,11 +2193,11 @@
                       },
                       {
                         "x": 122.5,
-                        "y": 163.5
+                        "y": 160.5
                       },
                       {
                         "x": 13,
-                        "y": 163.5
+                        "y": 160.5
                       }
                     ]
                   ]
@@ -2197,11 +2237,11 @@
                       },
                       {
                         "x": 122.5,
-                        "y": 163.5
+                        "y": 160.5
                       },
                       {
                         "x": 13,
-                        "y": 163.5
+                        "y": 160.5
                       }
                     ]
                   ]
@@ -2241,11 +2281,11 @@
                       },
                       {
                         "x": 122.5,
-                        "y": 163.5
+                        "y": 160.5
                       },
                       {
                         "x": 13,
-                        "y": 163.5
+                        "y": 160.5
                       }
                     ]
                   ]
@@ -2285,11 +2325,11 @@
                       },
                       {
                         "x": 122.5,
-                        "y": 163.5
+                        "y": 160.5
                       },
                       {
                         "x": 13,
-                        "y": 163.5
+                        "y": 160.5
                       }
                     ]
                   ]
@@ -2329,11 +2369,11 @@
                       },
                       {
                         "x": 122.5,
-                        "y": 163.5
+                        "y": 160.5
                       },
                       {
                         "x": 13,
-                        "y": 163.5
+                        "y": 160.5
                       }
                     ]
                   ]
@@ -2405,7 +2445,7 @@
                       },
                       {
                         "x": 44,
-                        "y": 143.5
+                        "y": 144.5
                       }
                     ]
                   ]
@@ -2465,7 +2505,7 @@
                       },
                       {
                         "x": 44,
-                        "y": 143.5
+                        "y": 144.5
                       }
                     ]
                   ]
@@ -2525,7 +2565,7 @@
                       },
                       {
                         "x": 44,
-                        "y": 143.5
+                        "y": 144.5
                       }
                     ]
                   ]
@@ -2585,7 +2625,7 @@
                       },
                       {
                         "x": 44,
-                        "y": 143.5
+                        "y": 144.5
                       }
                     ]
                   ]
@@ -2645,7 +2685,7 @@
                       },
                       {
                         "x": 44,
-                        "y": 143.5
+                        "y": 144.5
                       }
                     ]
                   ]
@@ -2705,7 +2745,7 @@
                       },
                       {
                         "x": 44,
-                        "y": 143.5
+                        "y": 144.5
                       }
                     ]
                   ]
@@ -2765,7 +2805,7 @@
                       },
                       {
                         "x": 44,
-                        "y": 143.5
+                        "y": 144.5
                       }
                     ]
                   ]
@@ -2821,7 +2861,7 @@
                       },
                       {
                         "x": 44,
-                        "y": 143.5
+                        "y": 144.5
                       }
                     ]
                   ]
@@ -2865,7 +2905,7 @@
                       },
                       {
                         "x": 44,
-                        "y": 143.5
+                        "y": 144.5
                       }
                     ]
                   ]
@@ -2909,7 +2949,7 @@
                       },
                       {
                         "x": 44,
-                        "y": 143.5
+                        "y": 144.5
                       }
                     ]
                   ]
@@ -3184,7 +3224,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.479039586175742,
+        "zoomFactor": 0.870023285985732,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -3199,8 +3239,8 @@
           "name": "player",
           "persistentUuid": "460f4c4c-6ac8-44a9-b8d0-2c49668c019a",
           "width": 0,
-          "x": 471,
-          "y": 617,
+          "x": 1047,
+          "y": 607,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -3227,14 +3267,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 362,
+          "height": 352,
           "keepRatio": true,
           "layer": "",
           "name": "plat",
           "persistentUuid": "8d689cc0-ba7a-4f8b-b6f8-3fa70471ceec",
           "width": 60,
           "x": 818,
-          "y": 318,
+          "y": 328,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -3250,8 +3290,8 @@
           "name": "fake_ground",
           "persistentUuid": "9e83a623-01f3-4aa0-8585-8ddd54455726",
           "width": 571,
-          "x": 561,
-          "y": 330,
+          "x": 560,
+          "y": 334,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -3266,8 +3306,8 @@
           "name": "blinky",
           "persistentUuid": "78afb586-6ae4-4338-addf-de96396e44e9",
           "width": 65,
-          "x": 667,
-          "y": 583,
+          "x": 782,
+          "y": 244,
           "zOrder": 65,
           "numberProperties": [],
           "stringProperties": [],
@@ -3305,10 +3345,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "Ladder",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "Ladder",
               "yGrabOffset": 0
             }
           ]
@@ -3324,10 +3364,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "Jumpthru",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "Jumpthru",
               "yGrabOffset": 0
             }
           ]
@@ -3345,6 +3385,11 @@
               "value": false
             },
             {
+              "name": "shouldclimb",
+              "type": "boolean",
+              "value": false
+            },
+            {
               "name": "jump",
               "type": "boolean",
               "value": false
@@ -3355,7 +3400,17 @@
               "value": "chase"
             },
             {
-              "name": "playerclimb",
+              "name": "keepleft",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "keepgright",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "donotclimb",
               "type": "boolean",
               "value": false
             }
@@ -3363,6 +3418,8 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 1500,
               "canGoDownFromJumpthru": true,
               "canGrabPlatforms": false,
@@ -3375,9 +3432,7 @@
               "ladderClimbingSpeed": 150,
               "maxFallingSpeed": 700,
               "maxSpeed": 250,
-              "name": "PlatformerObject",
               "slopeMaxAngle": 60,
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "useLegacyTrajectory": false,
               "xGrabTolerance": 10,
               "yGrabOffset": 0
@@ -3385,12 +3440,12 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "00",
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "looping": true,
+                  "timeBetweenFrames": 0.25,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
@@ -3398,8 +3453,44 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 156,
+                        "y": -10
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 146.5,
+                        "y": 69.5
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 10,
+                            "y": 10
+                          },
+                          {
+                            "x": 290,
+                            "y": 10
+                          },
+                          {
+                            "x": 290,
+                            "y": 290
+                          },
+                          {
+                            "x": 10,
+                            "y": 290
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "2469740-blinky-2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 156,
+                        "y": -10
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -3677,6 +3768,16 @@
                 "Animation",
                 "!=",
                 "\"slide\""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "PlatformBehavior::IsOnLadder"
+              },
+              "parameters": [
+                "player",
+                "PlatformerObject"
               ]
             }
           ],
@@ -4278,15 +4379,47 @@
           "comment": "blinky"
         },
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "要不要爬梯子"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "PlatformBehavior::IsJumping"
+              },
+              "parameters": [
+                "player",
+                "PlatformerObject"
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "PlatformBehavior::IsFalling"
+              },
+              "parameters": [
+                "player",
+                "PlatformerObject"
+              ]
+            },
             {
               "type": {
                 "value": "PosY"
               },
               "parameters": [
                 "player",
-                "<=",
+                "<",
                 "blinky.Y()"
               ]
             }
@@ -4298,7 +4431,7 @@
               },
               "parameters": [
                 "blinky",
-                "playerclimb",
+                "shouldclimb",
                 "True",
                 ""
               ]
@@ -4310,12 +4443,11 @@
           "conditions": [
             {
               "type": {
-                "inverted": true,
                 "value": "PosY"
               },
               "parameters": [
                 "player",
-                "<=",
+                ">=",
                 "blinky.Y()"
               ]
             }
@@ -4327,12 +4459,24 @@
               },
               "parameters": [
                 "blinky",
-                "playerclimb",
+                "shouldclimb",
                 "False",
                 ""
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "如果不正在爬&不正在尋路模式=可以移動"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -4344,6 +4488,17 @@
               "parameters": [
                 "blinky",
                 "climb",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "blinky",
+                "donotclimb",
                 "=",
                 ""
               ]
@@ -4426,27 +4581,27 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "尋路模式"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "Distance"
-              },
-              "parameters": [
-                "player",
-                "blinky",
-                "350",
-                ""
-              ]
-            },
             {
               "type": {
                 "value": "BooleanObjectVariable"
               },
               "parameters": [
                 "blinky",
-                "playerclimb",
+                "keepgright",
                 "True",
                 ""
               ]
@@ -4455,18 +4610,7 @@
           "actions": [
             {
               "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "blinky",
-                "climb",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PlatformBehavior::SimulateLadderKey"
+                "value": "PlatformBehavior::SimulateRightKey"
               },
               "parameters": [
                 "blinky",
@@ -4475,14 +4619,144 @@
             },
             {
               "type": {
-                "value": "PlatformBehavior::SimulateUpKey"
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
               },
               "parameters": [
                 "blinky",
-                "PlatformerObject"
+                "Flippable",
+                "yes"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::IsFalling"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "PlatformerObject"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "keepgright",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "donotclimb",
+                    "False",
+                    ""
+                  ]
+                }
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "blinky",
+                "keepleft",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateLeftKey"
+              },
+              "parameters": [
+                "blinky",
+                "PlatformerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "blinky",
+                "Flippable",
+                "no"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::IsFalling"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "PlatformerObject"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "keepleft",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "donotclimb",
+                    "False",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "如果玩家不在空中平台&應該爬"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -4505,7 +4779,7 @@
               },
               "parameters": [
                 "blinky",
-                "playerclimb",
+                "shouldclimb",
                 "True",
                 ""
               ]
@@ -4553,12 +4827,89 @@
                 "PlatformerObject"
               ]
             }
-          ],
-          "events": [
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "碰到平台就爬到底"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "blinky",
+                "fake_ground",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "PlatformBehavior::IsObjectOnGivenFloor"
+              },
+              "parameters": [
+                "blinky",
+                "PlatformerObject",
+                "fake_ground",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "blinky",
+                "plat",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "blinky",
+                "climb",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateLadderKey"
+              },
+              "parameters": [
+                "blinky",
+                "PlatformerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateUpKey"
+              },
+              "parameters": [
+                "blinky",
+                "PlatformerObject"
+              ]
             }
           ]
         },
@@ -4572,19 +4923,20 @@
               "parameters": [
                 "blinky",
                 "plat",
-                "",
+                "True",
                 "",
                 ""
               ]
             },
             {
               "type": {
-                "value": "PosY"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
-                "player",
-                ">=",
-                "blinky.Y()"
+                "blinky",
+                "shouldclimb",
+                "=",
+                ""
               ]
             }
           ],
@@ -4599,6 +4951,18 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "空中不能移動"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -4650,6 +5014,147 @@
                 "climb",
                 "False",
                 ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "尋路邏輯"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::IsObjectOnGivenFloor"
+              },
+              "parameters": [
+                "blinky",
+                "PlatformerObject",
+                "fake_ground",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PosY"
+              },
+              "parameters": [
+                "player",
+                ">",
+                "blinky.Y()"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "blinky",
+                "keepleft",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "blinky",
+                "keepgright",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "player",
+                    "<",
+                    "blinky.X()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "donotclimb",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "keepleft",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "player",
+                    ">",
+                    "blinky.X()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "donotclimb",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "keepgright",
+                    "True",
+                    ""
+                  ]
+                }
               ]
             }
           ]
