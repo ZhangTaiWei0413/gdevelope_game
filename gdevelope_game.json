@@ -643,9 +643,9 @@
         {
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "jumpSpeed": 600,
           "canGrabPlatforms": false,
           "ignoreDefaultControls": true,
-          "jumpSpeed": 750,
           "ladderClimbingSpeed": 300,
           "acceleration": 1500,
           "canGoDownFromJumpthru": true,
@@ -3224,7 +3224,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.870023285985732,
+        "zoomFactor": 0.841642812537314,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -3267,12 +3267,12 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 352,
+          "height": 355,
           "keepRatio": true,
           "layer": "",
           "name": "plat",
           "persistentUuid": "8d689cc0-ba7a-4f8b-b6f8-3fa70471ceec",
-          "width": 60,
+          "width": 53,
           "x": 818,
           "y": 328,
           "zOrder": 3,
@@ -3410,7 +3410,7 @@
               "value": false
             },
             {
-              "name": "donotclimb",
+              "name": "donotmove",
               "type": "boolean",
               "value": false
             }
@@ -4498,7 +4498,7 @@
               },
               "parameters": [
                 "blinky",
-                "donotclimb",
+                "donotmove",
                 "=",
                 ""
               ]
@@ -4660,7 +4660,7 @@
                   },
                   "parameters": [
                     "blinky",
-                    "donotclimb",
+                    "donotmove",
                     "False",
                     ""
                   ]
@@ -4737,7 +4737,7 @@
                   },
                   "parameters": [
                     "blinky",
-                    "donotclimb",
+                    "donotmove",
                     "False",
                     ""
                   ]
@@ -5100,7 +5100,7 @@
                   },
                   "parameters": [
                     "blinky",
-                    "donotclimb",
+                    "donotmove",
                     "True",
                     ""
                   ]
@@ -5139,7 +5139,7 @@
                   },
                   "parameters": [
                     "blinky",
-                    "donotclimb",
+                    "donotmove",
                     "True",
                     ""
                   ]
