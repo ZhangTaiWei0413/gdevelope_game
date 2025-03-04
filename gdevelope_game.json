@@ -1,9 +1,9 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 224,
-    "major": 5,
-    "minor": 5,
+    "build": 99,
+    "major": 4,
+    "minor": 0,
     "revision": 0
   },
   "properties": {
@@ -18,6 +18,7 @@
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "templateSlug": "",
+    "useExternalSourceFiles": false,
     "version": "1.0.0",
     "name": "gdevelope_game",
     "description": "",
@@ -92,6 +93,7 @@
   "resources": {
     "resources": [
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Run (1).png",
         "kind": "image",
         "metadata": "",
@@ -100,6 +102,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Run (2).png",
         "kind": "image",
         "metadata": "",
@@ -108,6 +111,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Run (3).png",
         "kind": "image",
         "metadata": "",
@@ -116,6 +120,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Run (4).png",
         "kind": "image",
         "metadata": "",
@@ -124,6 +129,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Run (5).png",
         "kind": "image",
         "metadata": "",
@@ -132,6 +138,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Run (6).png",
         "kind": "image",
         "metadata": "",
@@ -140,6 +147,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Run (7).png",
         "kind": "image",
         "metadata": "",
@@ -148,6 +156,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Run (8).png",
         "kind": "image",
         "metadata": "",
@@ -156,6 +165,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Jump (1).png",
         "kind": "image",
         "metadata": "",
@@ -164,6 +174,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Jump (2).png",
         "kind": "image",
         "metadata": "",
@@ -172,6 +183,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Jump (3).png",
         "kind": "image",
         "metadata": "",
@@ -180,6 +192,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Jump (4).png",
         "kind": "image",
         "metadata": "",
@@ -188,6 +201,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Jump (5).png",
         "kind": "image",
         "metadata": "",
@@ -196,6 +210,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Jump (6).png",
         "kind": "image",
         "metadata": "",
@@ -204,6 +219,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Jump (7).png",
         "kind": "image",
         "metadata": "",
@@ -212,6 +228,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Jump (8).png",
         "kind": "image",
         "metadata": "",
@@ -220,6 +237,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Jump (9).png",
         "kind": "image",
         "metadata": "",
@@ -228,6 +246,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Jump (10).png",
         "kind": "image",
         "metadata": "",
@@ -236,6 +255,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Dead (1).png",
         "kind": "image",
         "metadata": "",
@@ -244,6 +264,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Dead (2).png",
         "kind": "image",
         "metadata": "",
@@ -252,6 +273,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Dead (3).png",
         "kind": "image",
         "metadata": "",
@@ -260,6 +282,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Dead (4).png",
         "kind": "image",
         "metadata": "",
@@ -268,6 +291,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Dead (5).png",
         "kind": "image",
         "metadata": "",
@@ -276,6 +300,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Dead (6).png",
         "kind": "image",
         "metadata": "",
@@ -284,6 +309,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Dead (7).png",
         "kind": "image",
         "metadata": "",
@@ -292,6 +318,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Dead (8).png",
         "kind": "image",
         "metadata": "",
@@ -300,6 +327,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Dead (9).png",
         "kind": "image",
         "metadata": "",
@@ -308,6 +336,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Dead (10).png",
         "kind": "image",
         "metadata": "",
@@ -316,6 +345,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Idle (1).png",
         "kind": "image",
         "metadata": "",
@@ -324,6 +354,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Idle (2).png",
         "kind": "image",
         "metadata": "",
@@ -332,6 +363,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Idle (3).png",
         "kind": "image",
         "metadata": "",
@@ -340,6 +372,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Idle (4).png",
         "kind": "image",
         "metadata": "",
@@ -348,6 +381,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Idle (5).png",
         "kind": "image",
         "metadata": "",
@@ -356,6 +390,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Idle (6).png",
         "kind": "image",
         "metadata": "",
@@ -364,6 +399,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Idle (7).png",
         "kind": "image",
         "metadata": "",
@@ -372,6 +408,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Idle (8).png",
         "kind": "image",
         "metadata": "",
@@ -380,6 +417,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Idle (9).png",
         "kind": "image",
         "metadata": "",
@@ -388,6 +426,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Idle (10).png",
         "kind": "image",
         "metadata": "",
@@ -396,6 +435,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Melee (1).png",
         "kind": "image",
         "metadata": "",
@@ -404,6 +444,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Melee (2).png",
         "kind": "image",
         "metadata": "",
@@ -412,6 +453,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Melee (3).png",
         "kind": "image",
         "metadata": "",
@@ -420,6 +462,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Melee (4).png",
         "kind": "image",
         "metadata": "",
@@ -428,6 +471,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Melee (5).png",
         "kind": "image",
         "metadata": "",
@@ -436,6 +480,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Melee (6).png",
         "kind": "image",
         "metadata": "",
@@ -444,6 +489,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Melee (7).png",
         "kind": "image",
         "metadata": "",
@@ -452,6 +498,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Shoot (1).png",
         "kind": "image",
         "metadata": "",
@@ -460,6 +507,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Shoot (2).png",
         "kind": "image",
         "metadata": "",
@@ -468,6 +516,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Shoot (3).png",
         "kind": "image",
         "metadata": "",
@@ -476,6 +525,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Slide (1).png",
         "kind": "image",
         "metadata": "",
@@ -484,6 +534,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Slide (2).png",
         "kind": "image",
         "metadata": "",
@@ -492,6 +543,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Slide (3).png",
         "kind": "image",
         "metadata": "",
@@ -500,6 +552,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Slide (4).png",
         "kind": "image",
         "metadata": "",
@@ -508,6 +561,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "GirlSprite/Slide (5).png",
         "kind": "image",
         "metadata": "",
@@ -516,6 +570,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "assets/NewSprite.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -524,6 +579,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "assets/NewSprite2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -532,6 +588,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "assets/NewSprite3.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -540,6 +597,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "16pic_9368944_b.png",
         "kind": "image",
         "metadata": "",
@@ -548,6 +606,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "16pic_9368944_b (1).png",
         "kind": "image",
         "metadata": "",
@@ -556,6 +615,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "下載.jpg",
         "kind": "image",
         "metadata": "",
@@ -564,6 +624,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "下載 (6).png",
         "kind": "image",
         "metadata": "",
@@ -572,6 +633,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "下載 (1).jpg",
         "kind": "image",
         "metadata": "",
@@ -580,6 +642,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "2469740-blinky.png",
         "kind": "image",
         "metadata": "",
@@ -588,6 +651,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "2469740-blinky-2.png",
         "kind": "image",
         "metadata": "",
@@ -596,6 +660,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "2469741-inky.png",
         "kind": "image",
         "metadata": "",
@@ -604,6 +669,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "2469741-inky-2.png",
         "kind": "image",
         "metadata": "",
@@ -3239,8 +3305,8 @@
           "name": "player",
           "persistentUuid": "460f4c4c-6ac8-44a9-b8d0-2c49668c019a",
           "width": 0,
-          "x": 1047,
-          "y": 607,
+          "x": 682,
+          "y": 259,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -3306,9 +3372,26 @@
           "name": "blinky",
           "persistentUuid": "78afb586-6ae4-4338-addf-de96396e44e9",
           "width": 65,
-          "x": 782,
-          "y": 244,
+          "x": 650,
+          "y": 582,
           "zOrder": 65,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 355,
+          "keepRatio": true,
+          "layer": "",
+          "name": "plat",
+          "persistentUuid": "dcdec3bb-d4e9-4c19-ba27-d166b32ebf2b",
+          "width": 53,
+          "x": 530,
+          "y": 330,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3405,7 +3488,17 @@
               "value": false
             },
             {
-              "name": "keepgright",
+              "name": "keepright",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "groundkeepleft",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "groundkeepright",
               "type": "boolean",
               "value": false
             },
@@ -4427,13 +4520,12 @@
           "actions": [
             {
               "type": {
-                "value": "SetBooleanObjectVariable"
+                "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
                 "blinky",
                 "shouldclimb",
-                "True",
-                ""
+                "True"
               ]
             }
           ]
@@ -4455,12 +4547,11 @@
           "actions": [
             {
               "type": {
-                "value": "SetBooleanObjectVariable"
+                "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
                 "blinky",
                 "shouldclimb",
-                "False",
                 ""
               ]
             }
@@ -4483,23 +4574,21 @@
           "conditions": [
             {
               "type": {
-                "value": "BooleanObjectVariable"
+                "value": "ObjectVariableAsBoolean"
               },
               "parameters": [
                 "blinky",
                 "climb",
-                "=",
-                ""
+                "="
               ]
             },
             {
               "type": {
-                "value": "BooleanObjectVariable"
+                "value": "ObjectVariableAsBoolean"
               },
               "parameters": [
                 "blinky",
                 "donotmove",
-                "=",
                 ""
               ]
             }
@@ -4597,90 +4686,12 @@
           "conditions": [
             {
               "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "blinky",
-                "keepgright",
-                "True",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PlatformBehavior::SimulateRightKey"
-              },
-              "parameters": [
-                "blinky",
-                "PlatformerObject"
-              ]
-            },
-            {
-              "type": {
-                "value": "FlippableCapability::FlippableBehavior::FlipX"
-              },
-              "parameters": [
-                "blinky",
-                "Flippable",
-                "yes"
-              ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "PlatformBehavior::IsFalling"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "PlatformerObject"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "keepgright",
-                    "False",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "donotmove",
-                    "False",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
+                "value": "ObjectVariableAsBoolean"
               },
               "parameters": [
                 "blinky",
                 "keepleft",
-                "True",
-                ""
+                "True"
               ]
             }
           ],
@@ -4711,6 +4722,52 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "player",
+                    ">",
+                    "blinky.X()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                  },
+                  "parameters": [
+                    "player",
+                    "PlatformerObject"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "keepright",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "keepleft",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
                     "value": "PlatformBehavior::IsFalling"
                   },
                   "parameters": [
@@ -4722,23 +4779,351 @@
               "actions": [
                 {
                   "type": {
-                    "value": "SetBooleanObjectVariable"
+                    "value": "SetObjectVariableAsBoolean"
                   },
                   "parameters": [
                     "blinky",
                     "keepleft",
-                    "False",
                     ""
                   ]
                 },
                 {
                   "type": {
-                    "value": "SetBooleanObjectVariable"
+                    "value": "SetObjectVariableAsBoolean"
                   },
                   "parameters": [
                     "blinky",
                     "donotmove",
-                    "False",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "blinky",
+                "keepright",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateRightKey"
+              },
+              "parameters": [
+                "blinky",
+                "PlatformerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "blinky",
+                "Flippable",
+                "yes"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "player",
+                    "<",
+                    "blinky.X()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                  },
+                  "parameters": [
+                    "player",
+                    "PlatformerObject"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "keepleft",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "keepright",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::IsFalling"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "PlatformerObject"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "keepright",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "donotmove",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "blinky",
+                "groundkeepleft",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateLeftKey"
+              },
+              "parameters": [
+                "blinky",
+                "PlatformerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "blinky",
+                "Flippable",
+                "no"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "plat",
+                    "",
+                    "",
+                    "yes"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "climb",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateLadderKey"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "PlatformerObject"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateUpKey"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "PlatformerObject"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "donotmove",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "groundkeepleft",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "blinky",
+                "groundkeepright",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateRightKey"
+              },
+              "parameters": [
+                "blinky",
+                "PlatformerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "blinky",
+                "Flippable",
+                "yes"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "plat",
+                    "",
+                    "",
+                    "yes"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "climb",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateLadderKey"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "PlatformerObject"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateUpKey"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "PlatformerObject"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "donotmove",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "groundkeepright",
                     ""
                   ]
                 }
@@ -4775,13 +5160,12 @@
             },
             {
               "type": {
-                "value": "BooleanObjectVariable"
+                "value": "ObjectVariableAsBoolean"
               },
               "parameters": [
                 "blinky",
                 "shouldclimb",
-                "True",
-                ""
+                "True"
               ]
             },
             {
@@ -4800,13 +5184,12 @@
           "actions": [
             {
               "type": {
-                "value": "SetBooleanObjectVariable"
+                "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
                 "blinky",
                 "climb",
-                "True",
-                ""
+                "True"
               ]
             },
             {
@@ -4884,13 +5267,12 @@
           "actions": [
             {
               "type": {
-                "value": "SetBooleanObjectVariable"
+                "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
                 "blinky",
                 "climb",
-                "True",
-                ""
+                "True"
               ]
             },
             {
@@ -4930,12 +5312,11 @@
             },
             {
               "type": {
-                "value": "BooleanObjectVariable"
+                "value": "ObjectVariableAsBoolean"
               },
               "parameters": [
                 "blinky",
                 "shouldclimb",
-                "=",
                 ""
               ]
             }
@@ -4980,13 +5361,12 @@
           "actions": [
             {
               "type": {
-                "value": "SetBooleanObjectVariable"
+                "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
                 "blinky",
                 "climb",
-                "True",
-                ""
+                "True"
               ]
             }
           ]
@@ -5007,12 +5387,11 @@
           "actions": [
             {
               "type": {
-                "value": "SetBooleanObjectVariable"
+                "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
                 "blinky",
                 "climb",
-                "False",
                 ""
               ]
             }
@@ -5056,23 +5435,21 @@
             },
             {
               "type": {
-                "value": "BooleanObjectVariable"
+                "value": "ObjectVariableAsBoolean"
               },
               "parameters": [
                 "blinky",
                 "keepleft",
-                "=",
                 ""
               ]
             },
             {
               "type": {
-                "value": "BooleanObjectVariable"
+                "value": "ObjectVariableAsBoolean"
               },
               "parameters": [
                 "blinky",
-                "keepgright",
-                "=",
+                "keepright",
                 ""
               ]
             }
@@ -5096,24 +5473,22 @@
               "actions": [
                 {
                   "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "donotmove",
-                    "True",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
+                    "value": "SetObjectVariableAsBoolean"
                   },
                   "parameters": [
                     "blinky",
                     "keepleft",
-                    "True",
-                    ""
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "donotmove",
+                    "True"
                   ]
                 }
               ]
@@ -5135,26 +5510,262 @@
               "actions": [
                 {
                   "type": {
-                    "value": "SetBooleanObjectVariable"
+                    "value": "SetObjectVariableAsBoolean"
                   },
                   "parameters": [
                     "blinky",
-                    "donotmove",
-                    "True",
-                    ""
+                    "keepright",
+                    "True"
                   ]
                 },
                 {
                   "type": {
-                    "value": "SetBooleanObjectVariable"
+                    "value": "SetObjectVariableAsBoolean"
                   },
                   "parameters": [
                     "blinky",
-                    "keepgright",
-                    "True",
+                    "donotmove",
+                    "True"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::IsObjectOnGivenFloor"
+              },
+              "parameters": [
+                "blinky",
+                "PlatformerObject",
+                "ground",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PosY"
+              },
+              "parameters": [
+                "player",
+                "<",
+                "blinky.Y()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "player",
+                "touchfakeground",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "blinky",
+                "groundkeepleft",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "blinky",
+                "groundkeepright",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PickNearest"
+                  },
+                  "parameters": [
+                    "plat",
+                    "blinky.X()",
+                    "blinky.Y()",
                     ""
                   ]
                 }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "blinky",
+                        ">",
+                        "plat.X()"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "groundkeepleft",
+                        "True"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "donotmove",
+                        "True"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "<",
+                        "plat.X()"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "groundkeepright",
+                        "True"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "donotmove",
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::IsObjectOnGivenFloor"
+              },
+              "parameters": [
+                "player",
+                "PlatformerObject",
+                "fake_ground",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "player",
+                "touchfakeground",
+                "True"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::IsObjectOnGivenFloor"
+              },
+              "parameters": [
+                "player",
+                "PlatformerObject",
+                "ground",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "player",
+                "touchfakeground",
+                "False"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetCameraCenterX"
+              },
+              "parameters": [
+                "",
+                "=",
+                "lerp(CameraCenterX(), player.X(),0.05)",
+                "",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterY"
+              },
+              "parameters": [
+                "",
+                "=",
+                "player.Y()-60",
+                "",
+                "0"
               ]
             }
           ]
@@ -5244,5 +5855,6 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [],
-  "externalLayouts": []
+  "externalLayouts": [],
+  "externalSourceFiles": []
 }
