@@ -881,6 +881,19 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/5b5c6c85ec4e1f5b6688be565c9a06920a76ee191915738afd61da1481fd6493_tiled_Tiled Filler UI Heart.png",
           "name": "tiled_Tiled Filler UI Heart.png"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Gas.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Gas.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/PixiJS/04556cffa8fa75a9515382f3ad3d092361a7a339c612344926d372f906e3e7ed_Gas.png",
+          "name": "Gas.png"
+        }
       }
     ],
     "resourceFolders": []
@@ -3559,7 +3572,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5468750000000027,
+        "zoomFactor": 0.6244537826600018,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -3683,22 +3696,6 @@
           "x": 952,
           "y": 165,
           "zOrder": 67,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "NewSprite",
-          "persistentUuid": "41a4d17c-21d2-49b6-b750-6169f5d52d4c",
-          "width": 0,
-          "x": 681,
-          "y": -45,
-          "zOrder": 68,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3980,6 +3977,8 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 1500,
               "canGoDownFromJumpthru": true,
               "canGrabPlatforms": false,
@@ -3992,9 +3991,7 @@
               "ladderClimbingSpeed": 150,
               "maxFallingSpeed": 700,
               "maxSpeed": 250,
-              "name": "PlatformerObject",
               "slopeMaxAngle": 60,
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "useLegacyTrajectory": false,
               "xGrabTolerance": 10,
               "yGrabOffset": 0
@@ -4050,6 +4047,51 @@
               ]
             }
           ]
+        },
+        {
+          "additive": true,
+          "assetStoreId": "8b9d676aee2e7b4e359522aecea263890ba30f957c5665d63d459675b12980f2",
+          "destroyWhenNoParticles": true,
+          "emitterAngleA": 0,
+          "emitterAngleB": 0,
+          "emitterForceMax": 0,
+          "emitterForceMin": 0,
+          "flow": 100,
+          "jumpForwardInTimeOnCreation": 0,
+          "maxParticleNb": 1000,
+          "name": "Gas",
+          "particleAlpha1": 50,
+          "particleAlpha2": 0,
+          "particleAlphaRandomness1": 0,
+          "particleAlphaRandomness2": 0,
+          "particleAngle1": 0,
+          "particleAngle2": 0,
+          "particleAngleRandomness1": 0,
+          "particleAngleRandomness2": 0,
+          "particleBlue1": 97,
+          "particleBlue2": 74,
+          "particleGravityX": 0,
+          "particleGravityY": 0,
+          "particleGreen1": 255,
+          "particleGreen2": 255,
+          "particleLifeTimeMax": 1.5,
+          "particleLifeTimeMin": 0.5,
+          "particleRed1": 107,
+          "particleRed2": 216,
+          "particleSize1": 100,
+          "particleSize2": 0,
+          "particleSizeRandomness1": 0,
+          "particleSizeRandomness2": 0,
+          "rendererParam1": 1,
+          "rendererParam2": 1,
+          "rendererType": "Quad",
+          "tank": -1,
+          "textureParticleName": "Gas.png",
+          "type": "ParticleSystem::ParticleEmitter",
+          "zoneRadius": 150,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "objectsFolderStructure": {
@@ -4072,6 +4114,9 @@
           },
           {
             "objectName": "NewSprite"
+          },
+          {
+            "objectName": "Gas"
           }
         ]
       },
@@ -4805,6 +4850,15 @@
                         "1000",
                         "1"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "NewSprite",
+                        "\"sum\""
+                      ]
                     }
                   ]
                 },
@@ -4994,6 +5048,32 @@
                         }
                       ]
                     }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "NewSprite",
+                    "\"sum\"",
+                    ">=",
+                    "0.5"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Arreter"
+                  },
+                  "parameters": [
+                    "NewSprite"
                   ]
                 }
               ]
@@ -6292,11 +6372,6 @@
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
         }
       ],
       "layers": [
