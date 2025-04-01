@@ -1,9 +1,9 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 99,
-    "major": 4,
-    "minor": 0,
+    "build": 224,
+    "major": 5,
+    "minor": 5,
     "revision": 0
   },
   "properties": {
@@ -18,7 +18,6 @@
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "templateSlug": "",
-    "useExternalSourceFiles": false,
     "version": "1.0.0",
     "name": "gdevelope_game",
     "description": "",
@@ -93,7 +92,6 @@
   "resources": {
     "resources": [
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Run (1).png",
         "kind": "image",
         "metadata": "",
@@ -102,7 +100,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Run (2).png",
         "kind": "image",
         "metadata": "",
@@ -111,7 +108,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Run (3).png",
         "kind": "image",
         "metadata": "",
@@ -120,7 +116,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Run (4).png",
         "kind": "image",
         "metadata": "",
@@ -129,7 +124,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Run (5).png",
         "kind": "image",
         "metadata": "",
@@ -138,7 +132,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Run (6).png",
         "kind": "image",
         "metadata": "",
@@ -147,7 +140,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Run (7).png",
         "kind": "image",
         "metadata": "",
@@ -156,7 +148,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Run (8).png",
         "kind": "image",
         "metadata": "",
@@ -165,7 +156,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Jump (1).png",
         "kind": "image",
         "metadata": "",
@@ -174,7 +164,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Jump (2).png",
         "kind": "image",
         "metadata": "",
@@ -183,7 +172,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Jump (3).png",
         "kind": "image",
         "metadata": "",
@@ -192,7 +180,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Jump (4).png",
         "kind": "image",
         "metadata": "",
@@ -201,7 +188,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Jump (5).png",
         "kind": "image",
         "metadata": "",
@@ -210,7 +196,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Jump (6).png",
         "kind": "image",
         "metadata": "",
@@ -219,7 +204,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Jump (7).png",
         "kind": "image",
         "metadata": "",
@@ -228,7 +212,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Jump (8).png",
         "kind": "image",
         "metadata": "",
@@ -237,7 +220,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Jump (9).png",
         "kind": "image",
         "metadata": "",
@@ -246,7 +228,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Jump (10).png",
         "kind": "image",
         "metadata": "",
@@ -255,7 +236,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Dead (1).png",
         "kind": "image",
         "metadata": "",
@@ -264,7 +244,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Dead (2).png",
         "kind": "image",
         "metadata": "",
@@ -273,7 +252,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Dead (3).png",
         "kind": "image",
         "metadata": "",
@@ -282,7 +260,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Dead (4).png",
         "kind": "image",
         "metadata": "",
@@ -291,7 +268,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Dead (5).png",
         "kind": "image",
         "metadata": "",
@@ -300,7 +276,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Dead (6).png",
         "kind": "image",
         "metadata": "",
@@ -309,7 +284,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Dead (7).png",
         "kind": "image",
         "metadata": "",
@@ -318,7 +292,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Dead (8).png",
         "kind": "image",
         "metadata": "",
@@ -327,7 +300,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Dead (9).png",
         "kind": "image",
         "metadata": "",
@@ -336,7 +308,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Dead (10).png",
         "kind": "image",
         "metadata": "",
@@ -345,7 +316,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Idle (1).png",
         "kind": "image",
         "metadata": "",
@@ -354,7 +324,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Idle (2).png",
         "kind": "image",
         "metadata": "",
@@ -363,7 +332,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Idle (3).png",
         "kind": "image",
         "metadata": "",
@@ -372,7 +340,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Idle (4).png",
         "kind": "image",
         "metadata": "",
@@ -381,7 +348,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Idle (5).png",
         "kind": "image",
         "metadata": "",
@@ -390,7 +356,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Idle (6).png",
         "kind": "image",
         "metadata": "",
@@ -399,7 +364,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Idle (7).png",
         "kind": "image",
         "metadata": "",
@@ -408,7 +372,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Idle (8).png",
         "kind": "image",
         "metadata": "",
@@ -417,7 +380,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Idle (9).png",
         "kind": "image",
         "metadata": "",
@@ -426,7 +388,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Idle (10).png",
         "kind": "image",
         "metadata": "",
@@ -435,7 +396,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Melee (1).png",
         "kind": "image",
         "metadata": "",
@@ -444,7 +404,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Melee (2).png",
         "kind": "image",
         "metadata": "",
@@ -453,7 +412,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Melee (3).png",
         "kind": "image",
         "metadata": "",
@@ -462,7 +420,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Melee (4).png",
         "kind": "image",
         "metadata": "",
@@ -471,7 +428,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Melee (5).png",
         "kind": "image",
         "metadata": "",
@@ -480,7 +436,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Melee (6).png",
         "kind": "image",
         "metadata": "",
@@ -489,7 +444,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Melee (7).png",
         "kind": "image",
         "metadata": "",
@@ -498,7 +452,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Shoot (1).png",
         "kind": "image",
         "metadata": "",
@@ -507,7 +460,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Shoot (2).png",
         "kind": "image",
         "metadata": "",
@@ -516,7 +468,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Shoot (3).png",
         "kind": "image",
         "metadata": "",
@@ -525,7 +476,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Slide (1).png",
         "kind": "image",
         "metadata": "",
@@ -534,7 +484,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Slide (2).png",
         "kind": "image",
         "metadata": "",
@@ -543,7 +492,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Slide (3).png",
         "kind": "image",
         "metadata": "",
@@ -552,7 +500,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Slide (4).png",
         "kind": "image",
         "metadata": "",
@@ -561,7 +508,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "GirlSprite/Slide (5).png",
         "kind": "image",
         "metadata": "",
@@ -570,7 +516,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/NewSprite.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -579,7 +524,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/NewSprite2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -588,7 +532,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/NewSprite3.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -597,7 +540,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "16pic_9368944_b.png",
         "kind": "image",
         "metadata": "",
@@ -606,7 +548,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "16pic_9368944_b (1).png",
         "kind": "image",
         "metadata": "",
@@ -615,7 +556,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "下載.jpg",
         "kind": "image",
         "metadata": "",
@@ -624,7 +564,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "下載 (6).png",
         "kind": "image",
         "metadata": "",
@@ -633,7 +572,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "下載 (1).jpg",
         "kind": "image",
         "metadata": "",
@@ -642,7 +580,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "2469740-blinky.png",
         "kind": "image",
         "metadata": "",
@@ -651,7 +588,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "2469740-blinky-2.png",
         "kind": "image",
         "metadata": "",
@@ -660,7 +596,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "2469741-inky.png",
         "kind": "image",
         "metadata": "",
@@ -669,7 +604,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "2469741-inky-2.png",
         "kind": "image",
         "metadata": "",
@@ -678,7 +612,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "._Elf_01__WALK_000.png",
         "kind": "image",
         "metadata": "",
@@ -687,7 +620,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "._Elf_01__WALK_001.png",
         "kind": "image",
         "metadata": "",
@@ -696,7 +628,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "._Elf_01__WALK_002.png",
         "kind": "image",
         "metadata": "",
@@ -705,7 +636,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "._Elf_01__WALK_003.png",
         "kind": "image",
         "metadata": "",
@@ -714,7 +644,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "._Elf_01__WALK_004.png",
         "kind": "image",
         "metadata": "",
@@ -723,7 +652,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "._Elf_01__WALK_005.png",
         "kind": "image",
         "metadata": "",
@@ -732,7 +660,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "._Elf_01__WALK_006.png",
         "kind": "image",
         "metadata": "",
@@ -741,7 +668,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "._Elf_01__WALK_007.png",
         "kind": "image",
         "metadata": "",
@@ -750,7 +676,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "._Elf_01__WALK_008.png",
         "kind": "image",
         "metadata": "",
@@ -759,7 +684,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "._Elf_01__WALK_009.png",
         "kind": "image",
         "metadata": "",
@@ -768,7 +692,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "Elf_01__WALK_008 (3).png",
         "kind": "image",
         "metadata": "",
@@ -777,7 +700,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "Elf_01__WALK_008 (4).png",
         "kind": "image",
         "metadata": "",
@@ -786,7 +708,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "Elf_01__WALK_008 (5).png",
         "kind": "image",
         "metadata": "",
@@ -795,7 +716,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "Elf_01__WALK_008 (6).png",
         "kind": "image",
         "metadata": "",
@@ -804,7 +724,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "Elf_01__WALK_008 (7).png",
         "kind": "image",
         "metadata": "",
@@ -813,7 +732,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "Elf_01__WALK_008 (8).png",
         "kind": "image",
         "metadata": "",
@@ -822,7 +740,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "Elf_01__WALK_008 (9).png",
         "kind": "image",
         "metadata": "",
@@ -831,7 +748,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/Flat Heart Empty.png",
         "kind": "image",
         "metadata": "",
@@ -844,7 +760,6 @@
         }
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/Flat Heart Filled.png",
         "kind": "image",
         "metadata": "",
@@ -857,7 +772,6 @@
         }
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/tiled_Tiled Empty UI Heart.png",
         "kind": "image",
         "metadata": "",
@@ -870,7 +784,6 @@
         }
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/tiled_Tiled Filler UI Heart.png",
         "kind": "image",
         "metadata": "",
@@ -883,7 +796,6 @@
         }
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/Gas.png",
         "kind": "image",
         "metadata": "",
@@ -894,6 +806,14 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/PixiJS/04556cffa8fa75a9515382f3ad3d092361a7a339c612344926d372f906e3e7ed_Gas.png",
           "name": "Gas.png"
         }
+      },
+      {
+        "file": "Slimes/slime_idle1.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"Slimes/slime_idle1.png\",\"extension\":\".png\"}",
+        "name": "Slimes\\slime_idle1.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -3520,6 +3440,7 @@
         "text": "100",
         "font": "",
         "textAlignment": "left",
+        "verticalTextAlignment": "top",
         "characterSize": 20,
         "color": "0;0;0"
       }
@@ -3696,6 +3617,22 @@
           "x": 952,
           "y": 165,
           "zOrder": 67,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "ui",
+          "name": "FlatHeartBar",
+          "persistentUuid": "1843ef83-9001-4246-972c-49d1ac6dc0e8",
+          "width": 0,
+          "x": 14,
+          "y": 10,
+          "zOrder": 68,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3944,6 +3881,8 @@
           "particleAngleRandomness2": 0,
           "particleBlue1": 40,
           "particleBlue2": 0,
+          "particleColor1": "255;122;40",
+          "particleColor2": "255;0;0",
           "particleGravityX": 0,
           "particleGravityY": 0,
           "particleGreen1": 122,
@@ -4070,6 +4009,8 @@
           "particleAngleRandomness2": 0,
           "particleBlue1": 97,
           "particleBlue2": 74,
+          "particleColor1": "107;255;97",
+          "particleColor2": "216;255;74",
           "particleGravityX": 0,
           "particleGravityY": 0,
           "particleGreen1": 255,
@@ -4092,6 +4033,70 @@
           "variables": [],
           "effects": [],
           "behaviors": []
+        },
+        {
+          "assetStoreId": "c807d51d4bab0016401aef4d64d10d137f5ac8738ffa15865e1bc81435b9720b",
+          "name": "FlatHeartBar",
+          "type": "TiledUnitsBar::TiledUnitsBar",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Health",
+              "type": "Health::Health",
+              "Health": 3,
+              "CurrentHealth": 0,
+              "MaxHealth": 3,
+              "DamageCooldown": 3,
+              "AllowOverHealing": false,
+              "IsHealthJustDamaged": false,
+              "DamageToBeApplied": 0,
+              "HitAtLeastOnce": false,
+              "ChanceToDodge": 0,
+              "IsJustDodged": false,
+              "HealToBeApplied": 0,
+              "HealthRegenRate": 0,
+              "HealthRegenDelay": 0,
+              "IsJustHealed": false,
+              "CurrentShieldPoints": 2.0247e-320,
+              "MaxShieldPoints": 0,
+              "ShieldDuration": 5,
+              "ShieldRegenRate": 0,
+              "BlockExcessDamage": false,
+              "ShieldRegenDelay": 0,
+              "IsShieldJustDamaged": false,
+              "ShieldDamageTaken": 2.0247e-320,
+              "FlatDamageReduction": 0,
+              "PercentDamageReduction": 0
+            }
+          ],
+          "content": {
+            "UnitWidth": 90,
+            "HideBackground": true,
+            "ShowBackground": false
+          },
+          "childrenContent": {
+            "Background": {
+              "bottomMargin": 0,
+              "height": 90,
+              "leftMargin": 0,
+              "rightMargin": 0,
+              "texture": "Flat Heart Empty.png",
+              "tiled": false,
+              "topMargin": 0,
+              "width": 270
+            },
+            "Bar": {
+              "height": 90,
+              "texture": "Flat Heart Empty.png",
+              "width": 90
+            },
+            "FillBar": {
+              "height": 90,
+              "texture": "Flat Heart Filled.png",
+              "width": 90
+            }
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -4117,6 +4122,9 @@
           },
           {
             "objectName": "Gas"
+          },
+          {
+            "objectName": "FlatHeartBar"
           }
         ]
       },
@@ -4184,30 +4192,6 @@
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "player",
-                "blinky",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": []
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -4508,7 +4492,58 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "地面邏輯 跳躍>滑鏟>射擊>普攻>移動"
+          "comment": "血量 地面邏輯 跳躍>滑鏟>射擊>普攻>移動"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "blinky",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Health::Health::IsDamageCooldownActive"
+              },
+              "parameters": [
+                "FlatHeartBar",
+                "Health",
+                "="
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TiledUnitsBar::TiledUnitsBar::SetValue"
+              },
+              "parameters": [
+                "FlatHeartBar",
+                "-",
+                "1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::TriggerDamageCooldown"
+              },
+              "parameters": [
+                "FlatHeartBar",
+                "Health",
+                "="
+              ]
+            }
+          ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -6467,6 +6502,10 @@
           "type": "FlippableCapability::FlippableBehavior"
         },
         {
+          "name": "Health",
+          "type": "Health::Health"
+        },
+        {
           "name": "Opacity",
           "type": "OpacityCapability::OpacityBehavior"
         },
@@ -6542,6 +6581,8 @@
         "gqDaZjCfevOOxBYkK6zlhtZnXCg1"
       ],
       "dependencies": [],
+      "globalVariables": [],
+      "sceneVariables": [],
       "eventsFunctions": [],
       "eventsBasedBehaviors": [
         {
@@ -11391,6 +11432,8 @@
         "q8ubdigLvIRXLxsJDDTaokO41mc2"
       ],
       "dependencies": [],
+      "globalVariables": [],
+      "sceneVariables": [],
       "eventsFunctions": [],
       "eventsBasedBehaviors": [
         {
@@ -12036,9 +12079,16 @@
       ],
       "eventsBasedObjects": [
         {
+          "areaMaxX": 64,
+          "areaMaxY": 64,
+          "areaMaxZ": 64,
+          "areaMinX": 0,
+          "areaMinY": 0,
+          "areaMinZ": 0,
           "defaultName": "ResourceBar",
           "description": "A bar that represents a resource in the game (health, mana, ammo, etc).",
           "fullName": "Resource bar (separated units)",
+          "isUsingLegacyInstancesRenderer": true,
           "name": "TiledUnitsBar",
           "eventsFunctions": [
             {
@@ -12988,11 +13038,42 @@
                 "objectName": "Background"
               }
             ]
-          }
+          },
+          "objectsGroups": [],
+          "layers": [
+            {
+              "ambientLightColorB": 200,
+              "ambientLightColorG": 200,
+              "ambientLightColorR": 200,
+              "camera3DFarPlaneDistance": 10000,
+              "camera3DFieldOfView": 45,
+              "camera3DNearPlaneDistance": 3,
+              "cameraType": "",
+              "followBaseLayerCamera": false,
+              "isLightingLayer": false,
+              "isLocked": false,
+              "name": "",
+              "renderingType": "",
+              "visibility": true,
+              "cameras": [
+                {
+                  "defaultSize": true,
+                  "defaultViewport": true,
+                  "height": 0,
+                  "viewportBottom": 1,
+                  "viewportLeft": 0,
+                  "viewportRight": 1,
+                  "viewportTop": 0,
+                  "width": 0
+                }
+              ],
+              "effects": []
+            }
+          ],
+          "instances": []
         }
       ]
     }
   ],
-  "externalLayouts": [],
-  "externalSourceFiles": []
+  "externalLayouts": []
 }
