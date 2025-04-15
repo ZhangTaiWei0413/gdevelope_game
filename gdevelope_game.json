@@ -1260,9 +1260,9 @@
       "effects": [],
       "behaviors": [
         {
-          "jumpSpeed": 600,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "jumpSpeed": 600,
           "canGrabPlatforms": false,
           "ignoreDefaultControls": true,
           "ladderClimbingSpeed": 300,
@@ -5779,7 +5779,7 @@
               },
               "parameters": [
                 "creating",
-                "True",
+                "False",
                 ""
               ]
             },
@@ -5855,35 +5855,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "summon"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PickNearest"
-              },
-              "parameters": [
-                "ground",
-                "player.X()",
-                "player.Y()",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "CurrentLayout",
-                "=",
-                "ground.LayoutName"
-              ]
-            }
-          ]
+          "comment": "summon centerx有問題"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -5899,19 +5871,9 @@
                     "value": "BuiltinCommonInstructions::CompareNumbers"
                   },
                   "parameters": [
-                    "mod(player.X() - 640, 1280)",
+                    "mod(abs(player.X()) - 640, 1280)",
                     "<=",
                     "10"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::CompareNumbers"
-                  },
-                  "parameters": [
-                    "mod(player.X() - 640, 1280)",
-                    ">=",
-                    "1270"
                   ]
                 }
               ]
@@ -5938,6 +5900,34 @@
             }
           ],
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PickNearest"
+                  },
+                  "parameters": [
+                    "ground",
+                    "player.X()",
+                    "player.Y()",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "CurrentLayout",
+                    "=",
+                    "ground.LayoutName"
+                  ]
+                }
+              ]
+            },
             {
               "type": "BuiltinCommonInstructions::ForEachChildVariable",
               "iterableVariableName": "LayoutList",
