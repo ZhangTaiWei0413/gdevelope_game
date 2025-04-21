@@ -4487,6 +4487,9 @@
             },
             {
               "name": "dirt"
+            },
+            {
+              "name": "score_soda"
             }
           ]
         }
@@ -4576,6 +4579,21 @@
           "name": "centerTarget",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "TestX",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "PrevX",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "CrossedFlag",
+          "type": "boolean",
+          "value": false
         }
       ],
       "instances": [
@@ -4780,7 +4798,14 @@
           "zOrder": 70,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "persistentUuid": "0166eae1-cc0a-435e-9cce-b3e836495199",
+              "type": "string",
+              "value": "Initial"
+            }
+          ]
         },
         {
           "angle": 0,
@@ -4813,7 +4838,14 @@
           "zOrder": 70,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "persistentUuid": "0166eae1-cc0a-435e-9cce-b3e836495199",
+              "type": "string",
+              "value": "Initial"
+            }
+          ]
         },
         {
           "angle": 0,
@@ -4830,7 +4862,13 @@
           "zOrder": 70,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "Initial"
+            }
+          ]
         },
         {
           "angle": 0,
@@ -4847,7 +4885,13 @@
           "zOrder": 70,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "Initial"
+            }
+          ]
         },
         {
           "angle": 0,
@@ -4864,7 +4908,13 @@
           "zOrder": 70,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "Initial"
+            }
+          ]
         },
         {
           "angle": 0,
@@ -4881,7 +4931,13 @@
           "zOrder": 70,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "Initial"
+            }
+          ]
         }
       ],
       "objects": [
@@ -5583,7 +5639,13 @@
           "name": "score_soda",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "\"\""
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -5802,6 +5864,26 @@
                 "=",
                 "\"Initial\""
               ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "PrevX",
+                "=",
+                "player.X()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "CrossedFlag",
+                "False",
+                ""
+              ]
             }
           ]
         },
@@ -5855,7 +5937,76 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "summon centerx有問題"
+          "comment": "summon"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "TestX",
+                "=",
+                "round((player.X() - 640) / 1280) * 1280 + 640"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "CrossedFlag",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "player",
+                "=",
+                "TestX"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "CrossedFlag",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "CenterX",
+                "=",
+                "TestX"
+              ]
+            }
+          ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -5868,14 +6019,127 @@
               "subInstructions": [
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                    "value": "BuiltinCommonInstructions::And"
                   },
-                  "parameters": [
-                    "mod(abs(player.X()) - 640, 1280)",
-                    "<=",
-                    "10"
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "player",
+                        ">",
+                        "PrevX"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "TestX",
+                        ">",
+                        "PrevX"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "TestX",
+                        "<=",
+                        "player.X()"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "player",
+                        "<",
+                        "PrevX"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "TestX",
+                        "<",
+                        "PrevX"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "TestX",
+                        ">=",
+                        "player.X()"
+                      ]
+                    }
                   ]
                 }
+              ]
+            },
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "player",
+                "!=",
+                "TestX"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "CrossedFlag",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "CenterX",
+                "=",
+                "TestX"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "CrossedFlag",
+                "True",
+                ""
               ]
             }
           ],
@@ -5886,16 +6150,6 @@
               },
               "parameters": [
                 "FilteredLayout"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "CenterX",
-                "=",
-                "640 + 1280 * round((player.X() - 640) / 1280)"
               ]
             }
           ],
@@ -6205,6 +6459,22 @@
                     ""
                   ]
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "PrevX",
+                "=",
+                "player.X()"
               ]
             }
           ]
@@ -7633,6 +7903,12 @@
                 ">=",
                 "0"
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -16075,7 +16351,13 @@
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "00"
+            }
+          ]
         },
         {
           "angle": 0,
@@ -16091,7 +16373,13 @@
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "00"
+            }
+          ]
         },
         {
           "angle": 0,
@@ -16107,7 +16395,13 @@
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "00"
+            }
+          ]
         },
         {
           "angle": 0,
@@ -16123,7 +16417,13 @@
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "00"
+            }
+          ]
         },
         {
           "angle": 0,
@@ -16139,7 +16439,13 @@
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "00"
+            }
+          ]
         },
         {
           "angle": 0,
@@ -16155,7 +16461,13 @@
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "00"
+            }
+          ]
         }
       ],
       "editionSettings": {
@@ -16259,7 +16571,13 @@
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "01"
+            }
+          ]
         },
         {
           "angle": 0,
@@ -16275,7 +16593,13 @@
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "01"
+            }
+          ]
         },
         {
           "angle": 0,
@@ -16291,7 +16615,13 @@
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "01"
+            }
+          ]
         },
         {
           "angle": 0,
@@ -16307,7 +16637,13 @@
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "01"
+            }
+          ]
         },
         {
           "angle": 0,
@@ -16323,7 +16659,13 @@
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "01"
+            }
+          ]
         },
         {
           "angle": 0,
@@ -16339,7 +16681,13 @@
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "01"
+            }
+          ]
         }
       ],
       "editionSettings": {
@@ -16436,7 +16784,13 @@
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "Initial"
+            }
+          ]
         },
         {
           "angle": 0,
@@ -16452,7 +16806,13 @@
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "Initial"
+            }
+          ]
         },
         {
           "angle": 0,
@@ -16468,7 +16828,13 @@
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "Initial"
+            }
+          ]
         }
       ],
       "editionSettings": {
