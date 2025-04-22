@@ -1246,6 +1246,374 @@
         "name": "assets\\jump18.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/dead1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\dead1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/idle1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\idle1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/idle2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\idle2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/slime_swallow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\slime_swallow.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_idle1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_idle1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_idle2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_idle2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_run1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_run1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_run2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_run2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_run3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_run3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_run4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_run4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_run5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_run5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_run6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_run6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_jump1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_jump1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_jump2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_jump2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_jump3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_jump3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_jump4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_jump4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_jump5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_jump5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_die1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_die1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_die2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_die2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_die3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_die3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_die4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_die4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_die5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_die5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_die6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_die6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_die7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_die7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_die8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_die8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_die9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_die9.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_die10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_die10.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_jump6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_jump6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_jump7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_jump7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_jump8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_jump8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_jump9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_jump9.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_slide3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_slide3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_slide1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_slide1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/n_slide2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\n_slide2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/p_run2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\p_run2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/p_run3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\p_run3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/p_run4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\p_run4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/p_jump1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\p_jump1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/p_jump2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\p_jump2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/p_jump3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\p_jump3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/p_jump4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\p_jump4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/p_jump5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\p_jump5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/p_jump6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\p_jump6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/p_jump7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\p_jump7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/p_jump8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\p_jump8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Slimes/New Project (1) (2)/p_jump9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slimes\\New Project (1) (2)\\p_jump9.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1323,78 +1691,78 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "idle1",
+                  "image": "Slimes\\New Project (1) (2)\\n_idle1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 12
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0.5,
-                        "y": 0
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 20,
-                        "y": 0
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 20,
-                        "y": 15
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 0.5,
-                        "y": 15
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "idle2",
+                  "image": "Slimes\\New Project (1) (2)\\n_idle2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 12
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0.5,
-                        "y": 0
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 20,
-                        "y": 0
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 20,
-                        "y": 15
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 0.5,
-                        "y": 15
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
@@ -3936,222 +4304,222 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "run2",
+                  "image": "Slimes\\New Project (1) (2)\\n_run1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 12
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0.5,
-                        "y": 2
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 20,
-                        "y": 2
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 20,
-                        "y": 17
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 0.5,
-                        "y": 17
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "run3",
+                  "image": "Slimes\\New Project (1) (2)\\n_run2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 12
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0.5,
-                        "y": 2
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 20,
-                        "y": 2
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 20,
-                        "y": 17
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 0.5,
-                        "y": 17
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "run4",
+                  "image": "Slimes\\New Project (1) (2)\\n_run3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 12
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0.5,
-                        "y": 2
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 20,
-                        "y": 2
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 20,
-                        "y": 17
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 0.5,
-                        "y": 17
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "run5",
+                  "image": "Slimes\\New Project (1) (2)\\n_run4.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 12
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0.5,
-                        "y": 2
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 20,
-                        "y": 2
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 20,
-                        "y": 17
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 0.5,
-                        "y": 17
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "run6",
+                  "image": "Slimes\\New Project (1) (2)\\n_run5.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 12
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0.5,
-                        "y": 2
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 20,
-                        "y": 2
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 20,
-                        "y": 17
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 0.5,
-                        "y": 17
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "run7",
+                  "image": "Slimes\\New Project (1) (2)\\n_run6.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 12
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0.5,
-                        "y": 2
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 20,
-                        "y": 2
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 20,
-                        "y": 17
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 0.5,
-                        "y": 17
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
@@ -4165,186 +4533,186 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": true,
+              "looping": false,
               "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "jump10",
+                  "image": "Slimes\\New Project (1) (2)\\n_jump1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 1,
-                        "y": 3
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 22.5,
-                        "y": 3
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 22.5,
-                        "y": 18
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 1,
-                        "y": 18
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "jump11",
+                  "image": "Slimes\\New Project (1) (2)\\n_jump2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 1,
-                        "y": 3
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 22.5,
-                        "y": 3
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 22.5,
-                        "y": 18
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 1,
-                        "y": 18
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "jump12",
+                  "image": "Slimes\\New Project (1) (2)\\n_jump3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 1,
-                        "y": 3
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 22.5,
-                        "y": 3
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 22.5,
-                        "y": 18
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 1,
-                        "y": 18
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "jump13",
+                  "image": "Slimes\\New Project (1) (2)\\n_jump4.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 1,
-                        "y": 3
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 22.5,
-                        "y": 3
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 22.5,
-                        "y": 18
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 1,
-                        "y": 18
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "jump14",
+                  "image": "Slimes\\New Project (1) (2)\\n_jump5.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 1,
-                        "y": 3
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 22.5,
-                        "y": 3
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 22.5,
-                        "y": 18
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 1,
-                        "y": 18
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
@@ -4364,360 +4732,360 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "dead1",
+                  "image": "Slimes\\New Project (1) (2)\\n_die1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 16.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 16.5,
-                    "y": 7.5
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 6.5,
-                        "y": 0
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 26.5,
-                        "y": 0
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 26.5,
-                        "y": 14
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 6.5,
-                        "y": 14
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "dead2",
+                  "image": "Slimes\\New Project (1) (2)\\n_die2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 16.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 16.5,
-                    "y": 7.5
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 6.5,
-                        "y": 0
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 26.5,
-                        "y": 0
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 26.5,
-                        "y": 14
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 6.5,
-                        "y": 14
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "dead3",
+                  "image": "Slimes\\New Project (1) (2)\\n_die3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 16.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 16.5,
-                    "y": 7.5
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 6.5,
-                        "y": 0
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 26.5,
-                        "y": 0
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 26.5,
-                        "y": 14
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 6.5,
-                        "y": 14
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "dead4",
+                  "image": "Slimes\\New Project (1) (2)\\n_die4.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 16.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 16.5,
-                    "y": 7.5
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 6.5,
-                        "y": 0
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 26.5,
-                        "y": 0
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 26.5,
-                        "y": 14
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 6.5,
-                        "y": 14
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "dead5",
+                  "image": "Slimes\\New Project (1) (2)\\n_die5.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 16.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 16.5,
-                    "y": 7.5
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 6.5,
-                        "y": 0
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 26.5,
-                        "y": 0
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 26.5,
-                        "y": 14
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 6.5,
-                        "y": 14
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "dead6",
+                  "image": "Slimes\\New Project (1) (2)\\n_die6.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 16.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 16.5,
-                    "y": 7.5
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 6.5,
-                        "y": 0
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 26.5,
-                        "y": 0
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 26.5,
-                        "y": 14
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 6.5,
-                        "y": 14
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "dead7",
+                  "image": "Slimes\\New Project (1) (2)\\n_die7.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 16.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 16.5,
-                    "y": 7.5
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 6.5,
-                        "y": 0
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 26.5,
-                        "y": 0
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 26.5,
-                        "y": 14
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 6.5,
-                        "y": 14
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "dead8",
+                  "image": "Slimes\\New Project (1) (2)\\n_die8.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 16.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 16.5,
-                    "y": 7.5
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 6.5,
-                        "y": 0
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 26.5,
-                        "y": 0
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 26.5,
-                        "y": 14
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 6.5,
-                        "y": 14
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "dead9",
+                  "image": "Slimes\\New Project (1) (2)\\n_die9.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 16.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 16.5,
-                    "y": 7.5
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 6.5,
-                        "y": 0
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 26.5,
-                        "y": 0
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 26.5,
-                        "y": 14
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 6.5,
-                        "y": 14
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "dead10",
+                  "image": "Slimes\\New Project (1) (2)\\n_die10.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 16.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 16.5,
-                    "y": 7.5
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 6.5,
-                        "y": 0
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 26.5,
-                        "y": 0
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 26.5,
-                        "y": 14
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 6.5,
-                        "y": 14
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
@@ -4731,114 +5099,114 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.16,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "slide1",
+                  "image": "Slimes\\New Project (1) (2)\\p_run2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0.5,
-                        "y": 2
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 20,
-                        "y": 2
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 20,
-                        "y": 17
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 0.5,
-                        "y": 17
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "slide2",
+                  "image": "Slimes\\New Project (1) (2)\\p_run3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0.5,
-                        "y": 2
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 20,
-                        "y": 2
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 20,
-                        "y": 17
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 0.5,
-                        "y": 17
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "slide3",
+                  "image": "Slimes\\New Project (1) (2)\\p_run4.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0.5,
-                        "y": 2
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 20,
-                        "y": 2
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 20,
-                        "y": 17
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 0.5,
-                        "y": 17
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
@@ -4857,144 +5225,420 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\jump15.png",
+                  "image": "Slimes\\New Project (1) (2)\\n_jump6.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 1,
-                        "y": 3
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 22.5,
-                        "y": 3
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 22.5,
-                        "y": 18
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 1,
-                        "y": 18
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\jump16.png",
+                  "image": "Slimes\\New Project (1) (2)\\n_jump7.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 1,
-                        "y": 3
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 22.5,
-                        "y": 3
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 22.5,
-                        "y": 18
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 1,
-                        "y": 18
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\jump17.png",
+                  "image": "Slimes\\New Project (1) (2)\\n_jump8.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 1,
-                        "y": 3
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 22.5,
-                        "y": 3
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 22.5,
-                        "y": 18
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 1,
-                        "y": 18
+                        "x": 29,
+                        "y": 19.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "pjump1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slimes\\New Project (1) (2)\\p_jump1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 20,
+                    "y": 19.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 29,
+                        "y": 4
+                      },
+                      {
+                        "x": 10,
+                        "y": 4
+                      },
+                      {
+                        "x": 10,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\jump18.png",
+                  "image": "Slimes\\New Project (1) (2)\\p_jump2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 20,
+                    "y": 19.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 11.5,
-                    "y": 7.5
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 1,
-                        "y": 3
+                        "x": 29,
+                        "y": 4
                       },
                       {
-                        "x": 22.5,
-                        "y": 3
+                        "x": 10,
+                        "y": 4
                       },
                       {
-                        "x": 22.5,
-                        "y": 18
+                        "x": 10,
+                        "y": 19.5
                       },
                       {
-                        "x": 1,
-                        "y": 18
+                        "x": 29,
+                        "y": 19.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slimes\\New Project (1) (2)\\p_jump3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 20,
+                    "y": 19.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 29,
+                        "y": 4
+                      },
+                      {
+                        "x": 10,
+                        "y": 4
+                      },
+                      {
+                        "x": 10,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 29,
+                        "y": 19.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slimes\\New Project (1) (2)\\p_jump4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 20,
+                    "y": 19.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 29,
+                        "y": 4
+                      },
+                      {
+                        "x": 10,
+                        "y": 4
+                      },
+                      {
+                        "x": 10,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 29,
+                        "y": 19.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slimes\\New Project (1) (2)\\p_jump5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 20,
+                    "y": 19.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 29,
+                        "y": 4
+                      },
+                      {
+                        "x": 10,
+                        "y": 4
+                      },
+                      {
+                        "x": 10,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 29,
+                        "y": 19.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "pjump2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slimes\\New Project (1) (2)\\p_jump6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 20,
+                    "y": 19.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 29,
+                        "y": 4
+                      },
+                      {
+                        "x": 10,
+                        "y": 4
+                      },
+                      {
+                        "x": 10,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 29,
+                        "y": 19.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slimes\\New Project (1) (2)\\p_jump7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 20,
+                    "y": 19.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 29,
+                        "y": 4
+                      },
+                      {
+                        "x": 10,
+                        "y": 4
+                      },
+                      {
+                        "x": 10,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 29,
+                        "y": 19.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slimes\\New Project (1) (2)\\p_jump8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 20,
+                    "y": 19.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 29,
+                        "y": 4
+                      },
+                      {
+                        "x": 10,
+                        "y": 4
+                      },
+                      {
+                        "x": 10,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 29,
+                        "y": 19.5
                       }
                     ]
                   ]
@@ -5050,7 +5694,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5942234647757776,
+        "zoomFactor": 0.8558219691512208,
         "windowMask": false
       },
       "objectsGroups": [
@@ -5508,15 +6152,32 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 46,
+          "height": 34,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewSprite2",
+          "persistentUuid": "37b2a611-d92b-41f6-988d-6bdefd56b3b1",
+          "width": 47.59999999999998,
+          "x": 392,
+          "y": 617,
+          "zOrder": 73,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 72,
           "keepRatio": true,
           "layer": "",
           "name": "player",
-          "persistentUuid": "092c2663-d9c5-45cb-aba8-5dfbde804990",
-          "width": 64.39999999999993,
-          "x": 719,
-          "y": 278,
-          "zOrder": 72,
+          "persistentUuid": "9e5c0448-f218-4c39-8b99-ac9799d55bf2",
+          "width": 120.00000000000001,
+          "x": 640,
+          "y": 622,
+          "zOrder": 74,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5611,7 +6272,7 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "blinky",
           "type": "Sprite",
@@ -5716,8 +6377,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 156,
-                        "y": -10
+                        "x": 150,
+                        "y": 290
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -5752,8 +6413,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 156,
-                        "y": -10
+                        "x": 150,
+                        "y": 290
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -6322,6 +6983,123 @@
             "characterSize": 20,
             "color": "0;0;0"
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "NewSprite2",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "acceleration": 1500,
+              "canGoDownFromJumpthru": true,
+              "canGrabPlatforms": false,
+              "canGrabWithoutMoving": true,
+              "deceleration": 1500,
+              "gravity": 1000,
+              "ignoreDefaultControls": false,
+              "jumpSpeed": 600,
+              "jumpSustainTime": 0.2,
+              "ladderClimbingSpeed": 150,
+              "maxFallingSpeed": 700,
+              "maxSpeed": 250,
+              "slopeMaxAngle": 60,
+              "useLegacyTrajectory": false,
+              "xGrabTolerance": 10,
+              "yGrabOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\idle1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 15
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 0
+                          },
+                          {
+                            "x": 20,
+                            "y": 0
+                          },
+                          {
+                            "x": 20,
+                            "y": 15
+                          },
+                          {
+                            "x": 1,
+                            "y": 15
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\idle2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 15
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 0
+                          },
+                          {
+                            "x": 20,
+                            "y": 0
+                          },
+                          {
+                            "x": 20,
+                            "y": 15
+                          },
+                          {
+                            "x": 1,
+                            "y": 15
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -6362,6 +7140,9 @@
           },
           {
             "objectName": "score"
+          },
+          {
+            "objectName": "NewSprite2"
           }
         ]
       },
@@ -6466,6 +7247,18 @@
                 "False",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterY"
+              },
+              "parameters": [
+                "",
+                "+",
+                "50",
+                "",
+                "0"
+              ]
             }
           ]
         },
@@ -6481,18 +7274,6 @@
                 "",
                 "=",
                 "lerp(CameraCenterX(), player.X(),0.04)",
-                "",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetCameraCenterY"
-              },
-              "parameters": [
-                "",
-                "=",
-                "player.Y()-60",
                 "",
                 "0"
               ]
@@ -7410,7 +8191,7 @@
                 "player",
                 "score",
                 "+",
-                "0.2"
+                "2"
               ]
             },
             {
@@ -7465,33 +8246,6 @@
           "actions": [],
           "events": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "PlatformBehavior::IsFalling"
-                  },
-                  "parameters": [
-                    "player",
-                    "PlatformerObject"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "player",
-                    "Animation",
-                    "=",
-                    "\"jump2\""
-                  ]
-                }
-              ]
-            },
-            {
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -7502,6 +8256,33 @@
                 "textR": 0
               },
               "comment": "跳躍&升降梯"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::IsOnFloor"
+                  },
+                  "parameters": [
+                    "player",
+                    "PlatformerObject"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::JumpSpeed"
+                  },
+                  "parameters": [
+                    "player",
+                    "PlatformerObject",
+                    "=",
+                    "player.jump"
+                  ]
+                }
+              ]
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -7581,6 +8362,16 @@
                         "",
                         "no"
                       ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "PlatformBehavior::IsFalling"
+                      },
+                      "parameters": [
+                        "player",
+                        "PlatformerObject"
+                      ]
                     }
                   ],
                   "actions": [],
@@ -7602,6 +8393,15 @@
                       "conditions": [
                         {
                           "type": {
+                            "value": "PlatformBehavior::IsOnFloor"
+                          },
+                          "parameters": [
+                            "player",
+                            "PlatformerObject"
+                          ]
+                        },
+                        {
+                          "type": {
                             "value": "KeyFromTextPressed"
                           },
                           "parameters": [
@@ -7614,16 +8414,10 @@
                             "value": "BuiltinCommonInstructions::CompareNumbers"
                           },
                           "parameters": [
-                            "player.score-1.6",
+                            "player.score-16",
                             ">=",
                             "0"
                           ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": []
                         }
                       ],
                       "actions": [
@@ -7635,7 +8429,29 @@
                             "player",
                             "score",
                             "-",
-                            "1.6"
+                            "16"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "score",
+                            "Text",
+                            "=",
+                            "player.score"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "player",
+                            "Animation",
+                            "=",
+                            "\"pjump1\""
                           ]
                         },
                         {
@@ -7651,34 +8467,12 @@
                         },
                         {
                           "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                          },
-                          "parameters": [
-                            "player",
-                            "Animation",
-                            "=",
-                            "\"jump1\""
-                          ]
-                        },
-                        {
-                          "type": {
                             "value": "PlatformBehavior::SimulateControl"
                           },
                           "parameters": [
                             "player",
                             "PlatformerObject",
                             "\"Jump\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                          },
-                          "parameters": [
-                            "score",
-                            "Text",
-                            "=",
-                            "player.score"
                           ]
                         }
                       ]
@@ -7688,35 +8482,109 @@
                       "conditions": [
                         {
                           "type": {
-                            "inverted": true,
-                            "value": "KeyFromTextPressed"
-                          },
-                          "parameters": [
-                            "",
-                            "\"LShift\""
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
                           },
                           "parameters": [
                             "player",
                             "Animation",
-                            "=",
-                            "\"jump1\""
+                            "!=",
+                            "\"pjump1\""
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "KeyFromTextPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "\"LShift\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                              },
+                              "parameters": [
+                                "player",
+                                "Animation",
+                                "=",
+                                "\"jump1\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::SimulateControl"
+                              },
+                              "parameters": [
+                                "player",
+                                "PlatformerObject",
+                                "\"Jump\""
+                              ]
+                            }
                           ]
                         },
                         {
-                          "type": {
-                            "value": "PlatformBehavior::SimulateControl"
-                          },
-                          "parameters": [
-                            "player",
-                            "PlatformerObject",
-                            "\"Jump\""
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::And"
+                              },
+                              "parameters": [],
+                              "subInstructions": [
+                                {
+                                  "type": {
+                                    "value": "KeyFromTextPressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "\"LShift\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                                  },
+                                  "parameters": [
+                                    "player.score-16",
+                                    "<",
+                                    "0"
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                              },
+                              "parameters": [
+                                "player",
+                                "Animation",
+                                "=",
+                                "\"jump1\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::SimulateControl"
+                              },
+                              "parameters": [
+                                "player",
+                                "PlatformerObject",
+                                "\"Jump\""
+                              ]
+                            }
                           ]
                         }
                       ]
@@ -7758,6 +8626,119 @@
                   "parameters": [
                     "player",
                     "PlatformerObject"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::IsFalling"
+                  },
+                  "parameters": [
+                    "player",
+                    "PlatformerObject"
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "player",
+                            "Animation",
+                            "=",
+                            "\"jump1\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "player",
+                            "Animation",
+                            "=",
+                            "\"run1\""
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "player",
+                        "Animation",
+                        "=",
+                        "\"jump2\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "player",
+                            "Animation",
+                            "=",
+                            "\"pjump1\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "player",
+                            "Animation",
+                            "=",
+                            "\"slide1\""
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "player",
+                        "Animation",
+                        "=",
+                        "\"pjump2\""
+                      ]
+                    }
                   ]
                 }
               ]
@@ -7865,7 +8846,7 @@
                       "parameters": [
                         "player",
                         "-",
-                        "10"
+                        "4"
                       ]
                     }
                   ]
@@ -7901,7 +8882,7 @@
                       "parameters": [
                         "player",
                         "+",
-                        "10"
+                        "4"
                       ]
                     }
                   ]
@@ -7943,21 +8924,10 @@
                   ]
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlatformBehavior::JumpSpeed"
-                  },
-                  "parameters": [
-                    "player",
-                    "PlatformerObject",
-                    "=",
-                    "player.jump"
-                  ]
-                }
-              ],
+              "actions": [],
               "events": [
                 {
+                  "disabled": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -7993,122 +8963,317 @@
                       },
                       "parameters": [
                         "",
-                        "\"a\""
+                        "\"LShift\""
                       ]
                     },
                     {
                       "type": {
-                        "value": "KeyFromTextPressed"
+                        "value": "BuiltinCommonInstructions::Or"
                       },
-                      "parameters": [
-                        "",
-                        "\"LShift\""
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::And"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "KeyFromTextPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "\"a\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "KeyPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "d"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::And"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "KeyFromTextPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "\"a\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "KeyPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "d"
+                              ]
+                            }
+                          ]
+                        }
                       ]
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "value": "FlippableCapability::FlippableBehavior::FlipX"
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
                       },
-                      "parameters": [
-                        "player",
-                        "Flippable",
-                        "yes"
+                      "comment": "每一秒問一次是否滑鏟"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "player",
+                            "Animation",
+                            "=",
+                            "\"slide1\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "CompareObjectTimer"
+                          },
+                          "parameters": [
+                            "player",
+                            "\"Slide\"",
+                            ">",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::CompareNumbers"
+                          },
+                          "parameters": [
+                            "player.score-16",
+                            ">=",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberObjectVariable"
+                          },
+                          "parameters": [
+                            "player",
+                            "score",
+                            "-",
+                            "4"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "score",
+                            "Text",
+                            "=",
+                            "player.score"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "player",
+                            "\"Slide\""
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
                       },
-                      "parameters": [
-                        "player",
-                        "Animation",
-                        "=",
-                        "\"slide1\""
+                      "comment": "玩家想滑鏟但分數不夠"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "player",
+                            "Animation",
+                            "=",
+                            "\"slide1\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "CompareObjectTimer"
+                          },
+                          "parameters": [
+                            "player",
+                            "\"Slide\"",
+                            ">",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::CompareNumbers"
+                          },
+                          "parameters": [
+                            "player.score-16",
+                            "<",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "player",
+                            "Animation",
+                            "=",
+                            "\"idle1\""
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "MettreX"
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
                       },
-                      "parameters": [
-                        "player",
-                        "-",
-                        "20"
+                      "comment": "發動滑鏟的第一次"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "player",
+                            "Animation",
+                            "!=",
+                            "\"slide1\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::CompareNumbers"
+                          },
+                          "parameters": [
+                            "player.score-16",
+                            ">=",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberObjectVariable"
+                          },
+                          "parameters": [
+                            "player",
+                            "score",
+                            "-",
+                            "16"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "player",
+                            "Animation",
+                            "=",
+                            "\"slide1\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "score",
+                            "Text",
+                            "=",
+                            "player.score"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "player",
+                            "\"Slide\""
+                          ]
+                        }
                       ]
                     }
                   ]
                 },
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "KeyFromTextPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "\"d\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "KeyFromTextPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "\"LShift\""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "FlippableCapability::FlippableBehavior::FlipX"
-                      },
-                      "parameters": [
-                        "player",
-                        "Flippable",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "player",
-                        "Animation",
-                        "=",
-                        "\"slide1\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "MettreX"
-                      },
-                      "parameters": [
-                        "player",
-                        "+",
-                        "20"
-                      ]
-                    }
-                  ]
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "退出滑鏟"
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "KeyFromTextPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "\"LShift\""
-                      ]
-                    },
                     {
                       "type": {
                         "value": "AnimatableCapability::AnimatableBehavior::Name"
@@ -8117,43 +9282,15 @@
                         "player",
                         "Animation",
                         "=",
-                        "\"slide\""
-                      ]
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": true,
-                            "value": "KeyFromTextPressed"
-                          },
-                          "parameters": [
-                            "",
-                            "\"a\""
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                          },
-                          "parameters": [
-                            "player",
-                            "Animation",
-                            "=",
-                            "\"idle1\""
-                          ]
-                        }
+                        "\"slide1\""
                       ]
                     },
                     {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
                         {
                           "type": {
                             "inverted": true,
@@ -8161,22 +9298,94 @@
                           },
                           "parameters": [
                             "",
-                            "\"d\""
+                            "\"LShift\""
                           ]
-                        }
-                      ],
-                      "actions": [
+                        },
                         {
                           "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                            "value": "BuiltinCommonInstructions::And"
                           },
-                          "parameters": [
-                            "player",
-                            "Animation",
-                            "=",
-                            "\"idle1\""
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "KeyFromTextPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "\"LShift\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "KeyFromTextPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "\"a\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "KeyPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "d"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::And"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "KeyFromTextPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "\"LShift\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "KeyFromTextPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "\"a\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "KeyPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "d"
+                              ]
+                            }
                           ]
                         }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "player",
+                        "Animation",
+                        "=",
+                        "\"idle1\""
                       ]
                     }
                   ]
@@ -8192,7 +9401,7 @@
                         "player",
                         "Animation",
                         "!=",
-                        "\"slide\""
+                        "\"slide1\""
                       ]
                     }
                   ],
@@ -8203,38 +9412,28 @@
                       "conditions": [
                         {
                           "type": {
-                            "value": "KeyFromTextPressed"
+                            "value": "BuiltinCommonInstructions::Or"
                           },
-                          "parameters": [
-                            "",
-                            "\"a\""
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                          },
-                          "parameters": [
-                            "player",
-                            "Animation",
-                            "=",
-                            "\"run1\""
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "KeyFromTextPressed"
-                          },
-                          "parameters": [
-                            "",
-                            "\"d\""
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "KeyFromTextPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "\"a\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "KeyPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "d"
+                              ]
+                            }
                           ]
                         }
                       ],
@@ -8593,118 +9792,233 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "玩家技能"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "時間暫停"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"q\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "player.score-16",
+                    ">=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "player",
+                    "score",
+                    "-",
+                    "16"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "player",
+                    "zawarudo",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "player",
+                    "\"zawarudo\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "score",
+                    "Text",
+                    "=",
+                    "player.score"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "滑鏟"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                  },
+                  "parameters": [
+                    "player",
+                    "Animation",
+                    "=",
+                    "\"slide1\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"a\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FlippableCapability::FlippableBehavior::FlipX"
+                      },
+                      "parameters": [
+                        "player",
+                        "Flippable",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MettreX"
+                      },
+                      "parameters": [
+                        "player",
+                        "-",
+                        "6"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"d\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FlippableCapability::FlippableBehavior::FlipX"
+                      },
+                      "parameters": [
+                        "player",
+                        "Flippable",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MettreX"
+                      },
+                      "parameters": [
+                        "player",
+                        "+",
+                        "6"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "大跳"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "體型"
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "玩家技能"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "時間暫停"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyFromTextPressed"
-              },
-              "parameters": [
-                "",
-                "\"q\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::CompareNumbers"
-              },
-              "parameters": [
-                "player.score-1.6",
-                ">=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "player",
-                "score",
-                "-",
-                "1.6"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "player",
-                "zawarudo",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "player",
-                "\"zawarudo\""
-              ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "score",
-                "Text",
-                "=",
-                "player.score"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "體型"
         }
       ]
     },
@@ -10289,32 +11603,12 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Or"
+                    "value": "PosY"
                   },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "Distance"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "player",
-                        "3840",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "PosY"
-                      },
-                      "parameters": [
-                        "blinky",
-                        ">",
-                        "618"
-                      ]
-                    }
+                  "parameters": [
+                    "blinky",
+                    ">",
+                    "683"
                   ]
                 }
               ],
