@@ -7960,7 +7960,6 @@
           "value": ""
         },
         {
-          "folded": true,
           "name": "LayoutList",
           "type": "array",
           "children": [
@@ -7971,6 +7970,22 @@
             {
               "type": "string",
               "value": "01"
+            },
+            {
+              "type": "string",
+              "value": "02"
+            },
+            {
+              "type": "string",
+              "value": "03"
+            },
+            {
+              "type": "string",
+              "value": "04"
+            },
+            {
+              "type": "string",
+              "value": "05"
             },
             {
               "type": "string",
@@ -8253,7 +8268,6 @@
             },
             {
               "name": "deleteflag",
-              "persistentUuid": "9439fab0-0287-41a3-a22b-ec4e7cc4fe78",
               "type": "boolean",
               "value": false
             }
@@ -8379,6 +8393,16 @@
               "name": "donotmove2",
               "type": "boolean",
               "value": false
+            },
+            {
+              "name": "fakegroundkeepleft",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "fakegroundkeepright",
+              "type": "boolean",
+              "value": false
             }
           ],
           "effects": [],
@@ -8388,9 +8412,9 @@
               "type": "IsOnScreen::InOnScreen"
             },
             {
-              "maxSpeed": 350,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "maxSpeed": 350,
               "acceleration": 1500,
               "canGoDownFromJumpthru": true,
               "canGrabPlatforms": false,
@@ -10226,17 +10250,6 @@
             },
             {
               "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "player",
-                "score",
-                "+",
-                "99999"
-              ]
-            },
-            {
-              "type": {
                 "value": "SetStringObjectVariable"
               },
               "parameters": [
@@ -10355,6 +10368,68 @@
               },
               "parameters": [
                 "strong",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "blinky",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "nps",
+                "=",
+                "\"s\""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "blinky",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "score",
+                "+",
+                "30"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "score",
+                "Text",
+                "=",
+                "player.score"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "blinky",
                 ""
               ]
             }
@@ -10713,7 +10788,6 @@
           ]
         },
         {
-          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -10731,7 +10805,6 @@
           "actions": [],
           "events": [
             {
-              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -10813,7 +10886,6 @@
               ]
             },
             {
-              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -12545,6 +12617,60 @@
                                 "\"srun1\""
                               ]
                             }
+                          ],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "KeyFromTextPressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "\"a\""
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "SetCenterX"
+                                  },
+                                  "parameters": [
+                                    "player",
+                                    "-",
+                                    "2.5"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "KeyFromTextPressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "\"d\""
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "SetCenterX"
+                                  },
+                                  "parameters": [
+                                    "player",
+                                    "+",
+                                    "2.5"
+                                  ]
+                                }
+                              ]
+                            }
                           ]
                         },
                         {
@@ -13313,6 +13439,16 @@
                     "donotmove",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "donotmove2",
+                    ""
+                  ]
                 }
               ],
               "actions": [],
@@ -13438,6 +13574,17 @@
                     "",
                     "",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "plat",
+                    "LayoutName",
+                    "=",
+                    "closest"
                   ]
                 }
               ],
@@ -13572,12 +13719,31 @@
                 },
                 {
                   "type": {
-                    "value": "ObjectVariableAsBoolean"
+                    "value": "BuiltinCommonInstructions::Or"
                   },
-                  "parameters": [
-                    "blinky",
-                    "shouldclimb",
-                    ""
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "shouldclimb",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "plat",
+                        "LayoutName",
+                        "!=",
+                        "closest"
+                      ]
+                    }
                   ]
                 }
               ],
@@ -13854,6 +14020,17 @@
                   "conditions": [
                     {
                       "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "plat",
+                        "LayoutName",
+                        "=",
+                        "closest"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "PickNearest"
                       },
                       "parameters": [
@@ -13940,6 +14117,249 @@
                         }
                       ]
                     }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "PlatformerObject",
+                    "fake_ground",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PosY"
+                  },
+                  "parameters": [
+                    "player",
+                    "<",
+                    "blinky.Y()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "player",
+                    "touchfakeground",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "fakegroundkeepleft",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "fakegroundkeepright",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "plat",
+                        "LayoutName",
+                        "=",
+                        "closest"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ObjectPickingTools::PickLowestVariableValueCondition"
+                      },
+                      "parameters": [
+                        "",
+                        "plat",
+                        "ToString(plat.Y())",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PosX"
+                          },
+                          "parameters": [
+                            "blinky",
+                            ">",
+                            "plat.X()"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "blinky",
+                            "fakegroundkeepleft",
+                            "True"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "blinky",
+                            "donotmove2",
+                            "True"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PosX"
+                          },
+                          "parameters": [
+                            "blinky",
+                            "<",
+                            "plat.X()"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "blinky",
+                            "fakegroundkeepright",
+                            "True"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "blinky",
+                            "donotmove2",
+                            "True"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "f對f找路取消"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "PosY"
+                      },
+                      "parameters": [
+                        "player",
+                        ">=",
+                        "blinky.Y()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "PlatformerObject",
+                        "fake_ground",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "fakegroundkeepleft",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "fakegroundkeepright",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "donotmove2",
+                    "False"
                   ]
                 }
               ]
@@ -14512,6 +14932,460 @@
               ]
             },
             {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "fakegroundkeepleft",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateLeftKey"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "PlatformerObject"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "Flippable",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "keepleft",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "keepright",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "groundkeepleft",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "groundkeepright",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "donotmove",
+                    "False"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "plat",
+                        "",
+                        "",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "plat",
+                        "LayoutName",
+                        "=",
+                        "closest"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "climb",
+                        "True"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::SimulateLadderKey"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "PlatformerObject"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::SimulateUpKey"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "PlatformerObject"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "donotmove2",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "fakegroundkeepleft",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "plat",
+                        "",
+                        "",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "plat",
+                        "LayoutName",
+                        "!=",
+                        "closest"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "PlatformerObject",
+                        "ground",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "donotmove2",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "fakegroundkeepleft",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "fakegroundkeepright",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateRightKey"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "PlatformerObject"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "Flippable",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "keepleft",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "keepright",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "groundkeepright",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "groundkeepleft",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "donotmove",
+                    "False"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "plat",
+                        "",
+                        "",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "plat",
+                        "LayoutName",
+                        "=",
+                        "closest"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "climb",
+                        "True"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::SimulateLadderKey"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "PlatformerObject"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::SimulateUpKey"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "PlatformerObject"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "donotmove2",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "fakegroundkeepright",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "plat",
+                        "",
+                        "",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "plat",
+                        "LayoutName",
+                        "!=",
+                        "closest"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "PlatformerObject",
+                        "ground",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "donotmove2",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "fakegroundkeepright",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -14792,37 +15666,6 @@
                             "blinky",
                             ">",
                             "683"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::And"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "StringObjectVariable"
-                          },
-                          "parameters": [
-                            "player",
-                            "nps",
-                            "=",
-                            "\"s\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "CollisionNP"
-                          },
-                          "parameters": [
-                            "player",
-                            "blinky",
-                            "",
-                            "",
-                            ""
                           ]
                         }
                       ]
@@ -21532,6 +22375,965 @@
         }
       ],
       "eventsBasedObjects": []
+    },
+    {
+      "author": "",
+      "category": "Advanced",
+      "extensionNamespace": "",
+      "fullName": "Object picking tools",
+      "gdevelopVersion": ">=5.5.222",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLXNlbGVjdGlvbi1lbGxpcHNlLWFycm93LWluc2lkZSIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xMS4yIDRDOS45NCA0LjEyIDguNzIgNC41MyA3LjY0IDUuMkw2LjY0IDMuNDdDNy45NSAyLjY0IDkuNDUgMi4xMyAxMSAyTTE3LjUzIDYuMjVDMTYuNjIgNS4zOSAxNS41MyA0LjczIDE0LjM0IDQuMzNMMTUgMi4zOUMxNi41IDIuODQgMTcuODkgMy42NiAxOSA0Ljc4TTUuMzQgNy40MUM0LjY0IDguNDQgNC4xOSA5LjYgNCAxMC44M0wyIDEwLjU1QzIuMiA5IDIuNzkgNy41IDMuNyA2LjIzTTIyIDEyVjEyLjY2TDIwIDEyLjVWMTJDMjAgMTAuOTIgMTkuODEgOS44NiAxOS4zOSA4Ljg2TDIxLjIyIDguMDZDMjEuNzUgOS4zMSAyMiAxMC42NSAyMiAxMk02IDE3LjNMNC41IDE4LjYxQzMuNDcgMTcuNDMgMi43MiAxNi4wNCAyLjMgMTQuNTNMNC4xNyAxNEM0LjUzIDE1LjIyIDUuMTYgMTYuMzUgNiAxNy4zTTEyLjE0IDIySDEyQzEwLjUgMjIgOSAyMS42OCA3LjY0IDIxLjA3TDguNTMgMTkuMjRDOS42MiAxOS43NSAxMC44IDIwIDEyIDIwSDEyLjE5TTE3IDIxSDE1VjE1SDIxVjE3SDE4LjQyTDIxLjE0IDE5Ljc2TDE5LjczIDIxLjE3TDE3IDE4LjUiIC8+PC9zdmc+",
+      "name": "ObjectPickingTools",
+      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/selection-ellipse-arrow-inside.svg",
+      "shortDescription": "Adds various object picking related tools.",
+      "version": "2.1.0",
+      "description": [
+        "Adds various actions and conditions for advanced object selection. Includes picking objects with the highest or lowest zOrder, an object variable, and the ability to unpick all objects.",
+        "",
+        "Note: Version 2.0.0 changed Z-order picking to pick all instances with the highest/lowest Z-order. Version 1.x.x only picked one instance."
+      ],
+      "origin": {
+        "identifier": "ObjectPickingTools",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "object",
+        "picking",
+        "instance",
+        "pick",
+        "unpick",
+        "select",
+        "deselect"
+      ],
+      "authorIds": [
+        "ZgrsWuRTAkXgeuPV9bo0zuEcA2w1",
+        "gqDaZjCfevOOxBYkK6zlhtZnXCg1"
+      ],
+      "dependencies": [],
+      "globalVariables": [],
+      "sceneVariables": [],
+      "eventsFunctions": [
+        {
+          "description": "Unpicks all instances of an object.",
+          "fullName": "Unpick all instances",
+          "functionType": "Action",
+          "name": "UnpickAction",
+          "sentence": "Unpick all instances of _PARAM1_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "const lists = eventsFunctionContext.getObjectsLists(\"object\").items;",
+                "for (const listName in lists)",
+                "    lists[listName].length = 0;",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ],
+          "parameters": [
+            {
+              "description": "The object to unpick all instances from",
+              "name": "object",
+              "type": "objectList"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Unpicks all instances of an object.",
+          "fullName": "Unpick all instances",
+          "functionType": "Condition",
+          "name": "UnpickCondition",
+          "sentence": "Unpick all instances of _PARAM1_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "const lists = eventsFunctionContext.getObjectsLists(\"object\").items;",
+                "for (const listName in lists)",
+                "    lists[listName].length = 0;",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "The object to unpick all instances from",
+              "name": "object",
+              "type": "objectList"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Pick object instances that have the lowest Z-order.",
+          "fullName": "Pick objects with lowest Z-order",
+          "functionType": "Action",
+          "name": "PickLowestZAction",
+          "sentence": "Pick _PARAM1_ with the lowest Z-order",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "// Create an empty array to hold the objects with the lowest value\r",
+                "let lowestValueObjects = [];\r",
+                "\r",
+                "// Initialize the lowest value to a very small number\r",
+                "let lowestValue = Infinity;\r",
+                "\r",
+                "// Get all instances of \"object\"\r",
+                "const lists = eventsFunctionContext.getObjectsLists(\"Object\").items;\r",
+                "\r",
+                "// Loop through each object to find the lowest value\r",
+                "for (const listName in lists) {\r",
+                "    for (const object of lists[listName]) {\r",
+                "        // Get the value of the variable\r",
+                "        const value = object.getZOrder();\r",
+                "        // Compare and update the lowest value\r",
+                "        if (value < lowestValue) {\r",
+                "            lowestValue = value;\r",
+                "            lowestValueObjects = [object]; // Reset the list to contain only this new lowest value object\r",
+                "        } else if (value === lowestValue) {\r",
+                "            lowestValueObjects.push(object); // If the value is equal to the current lowest, add it to the list\r",
+                "        }\r",
+                "    }\r",
+                "    // Remove all picked instances\r",
+                "    lists[listName].length = 0;\r",
+                "}\r",
+                "\r",
+                "// Pick all object instances with the lowest value\r",
+                "if (lowestValueObjects.length !== 0) {\r",
+                "    for (const object of lowestValueObjects) {\r",
+                "        lists[object.getName()].push(object);\r",
+                "    }\r",
+                "}"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object to select instances from",
+              "name": "Object",
+              "type": "objectList"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Pick object instances that have the lowest Z-order.",
+          "fullName": "Pick objects with lowest Z-order",
+          "functionType": "Condition",
+          "name": "PickLowestZCondition",
+          "sentence": "Pick _PARAM1_ with the lowest Z-order",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "// Create an empty array to hold the objects with the lowest value\r",
+                "let lowestValueObjects = [];\r",
+                "\r",
+                "// Initialize the lowest value to a very small number\r",
+                "let lowestValue = Infinity;\r",
+                "\r",
+                "// Get all instances of \"object\"\r",
+                "const lists = eventsFunctionContext.getObjectsLists(\"Object\").items;\r",
+                "\r",
+                "// Loop through each object to find the lowest value\r",
+                "for (const listName in lists) {\r",
+                "    for (const object of lists[listName]) {\r",
+                "        // Get the value of the variable\r",
+                "        const value = object.getZOrder();\r",
+                "        // Compare and update the lowest value\r",
+                "        if (value < lowestValue) {\r",
+                "            lowestValue = value;\r",
+                "            lowestValueObjects = [object]; // Reset the list to contain only this new lowest value object\r",
+                "        } else if (value === lowestValue) {\r",
+                "            lowestValueObjects.push(object); // If the value is equal to the current lowest, add it to the list\r",
+                "        }\r",
+                "    }\r",
+                "    // Remove all picked instances\r",
+                "    lists[listName].length = 0;\r",
+                "}\r",
+                "\r",
+                "// Pick all object instances with the lowest value\r",
+                "if (lowestValueObjects.length !== 0) {\r",
+                "    for (const object of lowestValueObjects) {\r",
+                "        lists[object.getName()].push(object);\r",
+                "    }\r",
+                "}"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object to select instances from",
+              "name": "Object",
+              "type": "objectList"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Pick object instances that have the highest Z-order.",
+          "fullName": "Pick objects with highest Z-order",
+          "functionType": "Action",
+          "name": "PickHighestZAction",
+          "sentence": "Pick _PARAM1_ with the highest Z-order",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "// Create an empty array to hold the objects with the highest value\r",
+                "let highestValueObjects = [];\r",
+                "\r",
+                "// Initialize the highest value to a very small number\r",
+                "let highestValue = -Infinity;\r",
+                "\r",
+                "// Get all instances of \"object\"\r",
+                "const lists = eventsFunctionContext.getObjectsLists(\"Object\").items;\r",
+                "\r",
+                "// Loop through each object to find the highest value\r",
+                "for (const listName in lists) {\r",
+                "    for (const object of lists[listName]) {\r",
+                "        // Get the value of the variable\r",
+                "        const value = object.getZOrder();\r",
+                "        // Compare and update the highest value\r",
+                "        if (value > highestValue) {\r",
+                "            highestValue = value;\r",
+                "            highestValueObjects = [object]; // Reset the list to contain only this new highest value object\r",
+                "        } else if (value === highestValue) {\r",
+                "            highestValueObjects.push(object); // If the value is equal to the current highest, add it to the list\r",
+                "        }\r",
+                "    }\r",
+                "    // Remove all picked instances\r",
+                "    lists[listName].length = 0;\r",
+                "}\r",
+                "\r",
+                "// Pick all object instances with the highest value\r",
+                "if (highestValueObjects.length !== 0) {\r",
+                "    for (const object of highestValueObjects) {\r",
+                "        lists[object.getName()].push(object);\r",
+                "    }\r",
+                "}"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object to select instances from",
+              "name": "Object",
+              "type": "objectList"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Pick object instances that have the highest Z-order.",
+          "fullName": "Pick objects with highest Z-order",
+          "functionType": "Condition",
+          "name": "PickHighestZCondition",
+          "sentence": "Pick _PARAM1_ with the highest Z-order",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "// Create an empty array to hold the objects with the highest value\r",
+                "let highestValueObjects = [];\r",
+                "\r",
+                "// Initialize the highest value to a very small number\r",
+                "let highestValue = -Infinity;\r",
+                "\r",
+                "// Get all instances of \"object\"\r",
+                "const lists = eventsFunctionContext.getObjectsLists(\"Object\").items;\r",
+                "\r",
+                "// Loop through each object to find the highest value\r",
+                "for (const listName in lists) {\r",
+                "    for (const object of lists[listName]) {\r",
+                "        // Get the value of the variable\r",
+                "        const value = object.getZOrder();\r",
+                "        // Compare and update the highest value\r",
+                "        if (value > highestValue) {\r",
+                "            highestValue = value;\r",
+                "            highestValueObjects = [object]; // Reset the list to contain only this new highest value object\r",
+                "        } else if (value === highestValue) {\r",
+                "            highestValueObjects.push(object); // If the value is equal to the current highest, add it to the list\r",
+                "        }\r",
+                "    }\r",
+                "    // Remove all picked instances\r",
+                "    lists[listName].length = 0;\r",
+                "}\r",
+                "\r",
+                "// Pick all object instances with the highest value\r",
+                "if (highestValueObjects.length !== 0) {\r",
+                "    for (const object of highestValueObjects) {\r",
+                "        lists[object.getName()].push(object);\r",
+                "    }\r",
+                "}"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object to select instances from",
+              "name": "Object",
+              "type": "objectList"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Pick object instances that have the lowest value of an object variable.",
+          "fullName": "Pick objects with lowest variable value",
+          "functionType": "Action",
+          "name": "PickLowestVariableValueAction",
+          "sentence": "Pick _PARAM1_ with the lowest value of variable _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "// Create an empty array to hold the objects with the lowest variable value\r",
+                "let lowestValueObjects = [];\r",
+                "\r",
+                "// Initialize the lowest value to a very small number\r",
+                "let lowestValue = Infinity;\r",
+                "\r",
+                "// Get all instances of \"object\"\r",
+                "const lists = eventsFunctionContext.getObjectsLists(\"Object\").items;\r",
+                "\r",
+                "// Store the variable name\r",
+                "const objectVariableName = eventsFunctionContext.getArgument(\"ObjectVariableName\");\r",
+                "\r",
+                "// Loop through each object to find the lowest value\r",
+                "for (const listName in lists) {\r",
+                "    for (const object of lists[listName]) {\r",
+                "        // Get the value of the variable\r",
+                "        const value = object.getVariables().get(objectVariableName).getAsNumber();\r",
+                "        // Compare and update the lowest value\r",
+                "        if (value < lowestValue) {\r",
+                "            lowestValue = value;\r",
+                "            lowestValueObjects = [object]; // Reset the list to contain only this new lowest value object\r",
+                "        } else if (value === lowestValue) {\r",
+                "            lowestValueObjects.push(object); // If the value is equal to the current lowest, add it to the list\r",
+                "        }\r",
+                "    }\r",
+                "    // Remove all picked instances\r",
+                "    lists[listName].length = 0;\r",
+                "}\r",
+                "\r",
+                "// Pick all object instances with the lowest value\r",
+                "if (lowestValueObjects.length !== 0) {\r",
+                "    for (const object of lowestValueObjects) {\r",
+                "        lists[object.getName()].push(object);\r",
+                "    }\r",
+                "}"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object to select instances from",
+              "name": "Object",
+              "type": "objectList"
+            },
+            {
+              "description": "Object variable name",
+              "name": "ObjectVariableName",
+              "type": "string"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Pick object instances that have the lowest value of an object variable.",
+          "fullName": "Pick objects with lowest variable value",
+          "functionType": "Condition",
+          "name": "PickLowestVariableValueCondition",
+          "sentence": "Pick _PARAM1_ with the lowest value of variable _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "// Create an empty array to hold the objects with the lowest variable value\r",
+                "let lowestValueObjects = [];\r",
+                "\r",
+                "// Initialize the lowest value to a very small number\r",
+                "let lowestValue = Infinity;\r",
+                "\r",
+                "// Get all instances of \"object\"\r",
+                "const lists = eventsFunctionContext.getObjectsLists(\"Object\").items;\r",
+                "\r",
+                "// Store the variable name\r",
+                "const objectVariableName = eventsFunctionContext.getArgument(\"ObjectVariableName\");\r",
+                "\r",
+                "// Loop through each object to find the lowest value\r",
+                "for (const listName in lists) {\r",
+                "    for (const object of lists[listName]) {\r",
+                "        // Get the value of the variable\r",
+                "        const value = object.getVariables().get(objectVariableName).getAsNumber();\r",
+                "        // Compare and update the lowest value\r",
+                "        if (value < lowestValue) {\r",
+                "            lowestValue = value;\r",
+                "            lowestValueObjects = [object]; // Reset the list to contain only this new lowest value object\r",
+                "        } else if (value === lowestValue) {\r",
+                "            lowestValueObjects.push(object); // If the value is equal to the current lowest, add it to the list\r",
+                "        }\r",
+                "    }\r",
+                "    // Remove all picked instances\r",
+                "    lists[listName].length = 0;\r",
+                "}\r",
+                "\r",
+                "// Pick all object instances with the lowest value\r",
+                "if (lowestValueObjects.length !== 0) {\r",
+                "    for (const object of lowestValueObjects) {\r",
+                "        lists[object.getName()].push(object);\r",
+                "    }\r",
+                "}"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object to select instances from",
+              "name": "Object",
+              "type": "objectList"
+            },
+            {
+              "description": "Object variable name",
+              "name": "ObjectVariableName",
+              "type": "string"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Pick object instances that have the highest value of an object variable.",
+          "fullName": "Pick objects with highest variable value",
+          "functionType": "Action",
+          "name": "PickHighestVariableValueAction",
+          "sentence": "Pick _PARAM1_ with the highest value of variable _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "// Create an empty array to hold the objects with the highest variable value\r",
+                "let highestValueObjects = [];\r",
+                "\r",
+                "// Initialize the highest value to a very small number\r",
+                "let highestValue = -Infinity;\r",
+                "\r",
+                "// Get all instances of \"object\"\r",
+                "const lists = eventsFunctionContext.getObjectsLists(\"Object\").items;\r",
+                "\r",
+                "// Store the variable name\r",
+                "const objectVariableName = eventsFunctionContext.getArgument(\"ObjectVariableName\");\r",
+                "\r",
+                "// Loop through each object to find the highest value\r",
+                "for (const listName in lists) {\r",
+                "    for (const object of lists[listName]) {\r",
+                "        // Get the value of the variable\r",
+                "        const value = object.getVariables().get(objectVariableName).getAsNumber();\r",
+                "        // Compare and update the highest value\r",
+                "        if (value > highestValue) {\r",
+                "            highestValue = value;\r",
+                "            highestValueObjects = [object]; // Reset the list to contain only this new highest value object\r",
+                "        } else if (value === highestValue) {\r",
+                "            highestValueObjects.push(object); // If the value is equal to the current highest, add it to the list\r",
+                "        }\r",
+                "    }\r",
+                "    // Remove all picked instances\r",
+                "    lists[listName].length = 0;\r",
+                "}\r",
+                "\r",
+                "// Pick all object instances with the highest value\r",
+                "if (highestValueObjects.length !== 0) {\r",
+                "    for (const object of highestValueObjects) {\r",
+                "        lists[object.getName()].push(object);\r",
+                "    }\r",
+                "}"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object to select instances from",
+              "name": "Object",
+              "type": "objectList"
+            },
+            {
+              "description": "Object variable name",
+              "name": "ObjectVariableName",
+              "type": "string"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Pick object instances that have the highest value of an object variable.",
+          "fullName": "Pick objects with highest variable value",
+          "functionType": "Condition",
+          "name": "PickHighestVariableValueCondition",
+          "sentence": "Pick _PARAM1_ with the highest value of variable _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "// Create an empty array to hold the objects with the highest variable value\r",
+                "let highestValueObjects = [];\r",
+                "\r",
+                "// Initialize the highest value to a very small number\r",
+                "let highestValue = -Infinity;\r",
+                "\r",
+                "// Get all instances of \"object\"\r",
+                "const lists = eventsFunctionContext.getObjectsLists(\"Object\").items;\r",
+                "\r",
+                "// Store the variable name\r",
+                "const objectVariableName = eventsFunctionContext.getArgument(\"ObjectVariableName\");\r",
+                "\r",
+                "// Loop through each object to find the highest value\r",
+                "for (const listName in lists) {\r",
+                "    for (const object of lists[listName]) {\r",
+                "        // Get the value of the variable\r",
+                "        const value = object.getVariables().get(objectVariableName).getAsNumber();\r",
+                "        // Compare and update the highest value\r",
+                "        if (value > highestValue) {\r",
+                "            highestValue = value;\r",
+                "            highestValueObjects = [object]; // Reset the list to contain only this new highest value object\r",
+                "        } else if (value === highestValue) {\r",
+                "            highestValueObjects.push(object); // If the value is equal to the current highest, add it to the list\r",
+                "        }\r",
+                "    }\r",
+                "    // Remove all picked instances\r",
+                "    lists[listName].length = 0;\r",
+                "}\r",
+                "\r",
+                "// Pick all object instances with the highest value\r",
+                "if (highestValueObjects.length !== 0) {\r",
+                "    for (const object of highestValueObjects) {\r",
+                "        lists[object.getName()].push(object);\r",
+                "    }\r",
+                "}"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object to select instances from",
+              "name": "Object",
+              "type": "objectList"
+            },
+            {
+              "description": "Object variable name",
+              "name": "ObjectVariableName",
+              "type": "string"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Picks the first instance out of a list of objects.",
+          "fullName": "Pick the first object (deprecated)",
+          "functionType": "Action",
+          "name": "PickFirstAction",
+          "private": true,
+          "sentence": "Pick the first _PARAM1_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "const lists = eventsFunctionContext.getObjectsLists(\"object\").items;\r",
+                "\r",
+                "for (const listName in lists) {\r",
+                "    const list = lists[listName];\r",
+                "    // TODO The 1st object in the list won't necessarily be the oldest one.\r",
+                "    // For instance, a collision condition that uses a spatial structure may change the order.\r",
+                "    if (list.length > 1) {\r",
+                "        list.length = 1;\r",
+                "    }\r",
+                "}\r",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ],
+          "parameters": [
+            {
+              "description": "The object to select an instances from",
+              "name": "object",
+              "type": "objectList"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Picks the first instance out of a list of objects.",
+          "fullName": "Pick the first object (deprecated)",
+          "functionType": "Condition",
+          "name": "PickFirstCondition",
+          "private": true,
+          "sentence": "Pick the first _PARAM1_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "const lists = eventsFunctionContext.getObjectsLists(\"object\").items;\r",
+                "\r",
+                "for (const listName in lists) {\r",
+                "    const list = lists[listName];\r",
+                "    // TODO The 1st object in the list won't necessarily be the oldest one.\r",
+                "    // For instance, a collision condition that uses a spatial structure may change the order.\r",
+                "    if (list.length > 1) {\r",
+                "        list.length = 1;\r",
+                "    }\r",
+                "}\r",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "The object to select an instances from",
+              "name": "object",
+              "type": "objectList"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Picks the last instance out of a list of objects.",
+          "fullName": "Pick the last object (deprecated)",
+          "functionType": "Action",
+          "name": "PickLastAction",
+          "private": true,
+          "sentence": "Pick the last _PARAM1_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "const lists = eventsFunctionContext.getObjectsLists(\"object\").items;\r",
+                "\r",
+                "for (const listName in lists) {\r",
+                "    const list = lists[listName];\r",
+                "    // TODO The last object in the list won't necessarily be the newest one.\r",
+                "    // For instance, a collision condition that uses a spatial structure may change the order.\r",
+                "    if (list.length > 1) {\r",
+                "        list[0] = list[list.length - 1];\r",
+                "        list.length = 1;\r",
+                "    }\r",
+                "}\r",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ],
+          "parameters": [
+            {
+              "description": "The object to select an instances from",
+              "name": "object",
+              "type": "objectList"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Picks the last instance out of a list of objects.",
+          "fullName": "Pick the last object (deprecated)",
+          "functionType": "Condition",
+          "name": "PickLastCondition",
+          "private": true,
+          "sentence": "Pick the last _PARAM1_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "const lists = eventsFunctionContext.getObjectsLists(\"object\").items;\r",
+                "\r",
+                "for (const listName in lists) {\r",
+                "    const list = lists[listName];\r",
+                "    // TODO The last object in the list won't necessarily be the newest one.\r",
+                "    // For instance, a collision condition that uses a spatial structure may change the order.\r",
+                "    if (list.length > 1) {\r",
+                "        list[0] = list[list.length - 1];\r",
+                "        list.length = 1;\r",
+                "    }\r",
+                "}\r",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "The object to select an instances from",
+              "name": "object",
+              "type": "objectList"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Picks the Nth instance out of a list of objects.",
+          "fullName": "Pick the Nth object (deprecated)",
+          "functionType": "Action",
+          "name": "PickNthAction",
+          "private": true,
+          "sentence": "Pick the _PARAM2_th _PARAM1_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "const lists = eventsFunctionContext.getObjectsLists(\"object\").items;\r",
+                "const n = eventsFunctionContext.getArgument(\"n\");\r",
+                "\r",
+                "for (const listName in lists) {\r",
+                "    const list = lists[listName];\r",
+                "    // TODO Objects from the list won't necessarily be the order they were created.\r",
+                "    // For instance, a collision condition that uses a spatial structure may change the order.\r",
+                "    if (n < list.length) {\r",
+                "        list[0] = list[n];\r",
+                "        list.length = 1;\r",
+                "    }\r",
+                "    else {\r",
+                "        list.length = 0;\r",
+                "    }\r",
+                "}\r",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            }
+          ],
+          "parameters": [
+            {
+              "description": "The object to select an instances from",
+              "name": "object",
+              "type": "objectList"
+            },
+            {
+              "description": "The place in the objects lists an instance has to have to be picked",
+              "name": "n",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Picks the Nth instance out of a list of objects.",
+          "fullName": "Pick the Nth object (deprecated)",
+          "functionType": "Condition",
+          "name": "PickNthCondition",
+          "private": true,
+          "sentence": "Pick the _PARAM2_th _PARAM1_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "const lists = eventsFunctionContext.getObjectsLists(\"object\").items;\r",
+                "const n = eventsFunctionContext.getArgument(\"n\");\r",
+                "\r",
+                "for (const listName in lists) {\r",
+                "    const list = lists[listName];\r",
+                "    // TODO Objects from the list won't necessarily be the order they were created.\r",
+                "    // For instance, a collision condition that uses a spatial structure may change the order.\r",
+                "    if (n < list.length) {\r",
+                "        list[0] = list[n];\r",
+                "        list.length = 1;\r",
+                "    }\r",
+                "    else {\r",
+                "        list.length = 0;\r",
+                "    }\r",
+                "}\r",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "The object to select an instances from",
+              "name": "object",
+              "type": "objectList"
+            },
+            {
+              "description": "The place in the objects lists an instance has to have to be picked",
+              "name": "n",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "eventsBasedBehaviors": [],
+      "eventsBasedObjects": []
     }
   ],
   "externalLayouts": [
@@ -22042,6 +23844,1351 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.9934433498259636,
+        "windowMask": false
+      }
+    },
+    {
+      "associatedLayout": "Untitled scene",
+      "name": "02",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 60,
+          "layer": "",
+          "name": "ground",
+          "persistentUuid": "7f8f057d-c958-4e0e-98cb-29b175ae9124",
+          "width": 1280,
+          "x": 0,
+          "y": 683,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "persistentUuid": "83e10ec4-2ed5-42c0-a2c8-d6181cdf3dfe",
+              "type": "string",
+              "value": "02"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 180,
+          "layer": "",
+          "name": "dirt",
+          "persistentUuid": "2459a6a6-bbc6-42c5-b963-95e980cf6541",
+          "width": 1280,
+          "x": 0,
+          "y": 743,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "persistentUuid": "3879ae8b-9e74-4acd-8bd9-2ce338119dc3",
+              "type": "string",
+              "value": "02"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 285,
+          "layer": "",
+          "name": "plat",
+          "persistentUuid": "774924af-32f4-403a-8c5a-8954d484c831",
+          "width": 53,
+          "x": 640,
+          "y": 398,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "02"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 60,
+          "keepRatio": true,
+          "layer": "",
+          "name": "fake_ground",
+          "persistentUuid": "77c97264-aea9-4c5d-8987-3cc4ac18f232",
+          "width": 337,
+          "x": 497,
+          "y": 396,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "persistentUuid": "0c791408-5c1b-4590-b255-a4fea2943a1c",
+              "type": "string",
+              "value": "02"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "",
+          "name": "strong",
+          "persistentUuid": "9c61c50d-4fb1-4b0b-9f04-c6b25d079386",
+          "width": 48,
+          "x": 643,
+          "y": 311,
+          "zOrder": 75,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "02"
+            }
+          ]
+        }
+      ],
+      "editionSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.5843784410740971,
+        "windowMask": false
+      }
+    },
+    {
+      "associatedLayout": "Untitled scene",
+      "name": "03",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 60,
+          "layer": "",
+          "name": "ground",
+          "persistentUuid": "7f8f057d-c958-4e0e-98cb-29b175ae9124",
+          "width": 1280,
+          "x": 0,
+          "y": 683,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "persistentUuid": "83e10ec4-2ed5-42c0-a2c8-d6181cdf3dfe",
+              "type": "string",
+              "value": "03"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 180,
+          "layer": "",
+          "name": "dirt",
+          "persistentUuid": "2459a6a6-bbc6-42c5-b963-95e980cf6541",
+          "width": 1280,
+          "x": 0,
+          "y": 743,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "persistentUuid": "3879ae8b-9e74-4acd-8bd9-2ce338119dc3",
+              "type": "string",
+              "value": "03"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "",
+          "name": "score_soda",
+          "persistentUuid": "101d8561-b54e-430c-9608-9894686a6efb",
+          "width": 48,
+          "x": 643,
+          "y": 561,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "03"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 60,
+          "keepRatio": true,
+          "layer": "",
+          "name": "fake_ground",
+          "persistentUuid": "77c97264-aea9-4c5d-8987-3cc4ac18f232",
+          "width": 973,
+          "x": 174,
+          "y": 396,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "persistentUuid": "0c791408-5c1b-4590-b255-a4fea2943a1c",
+              "type": "string",
+              "value": "03"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 286,
+          "layer": "",
+          "name": "plat",
+          "persistentUuid": "e17968b7-d46b-43e0-901f-9ca5c1c730fd",
+          "width": 53,
+          "x": 640,
+          "y": 397,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "03"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 60,
+          "layer": "",
+          "name": "fake_ground",
+          "persistentUuid": "95c71151-a4c6-456b-b297-86c9263c7335",
+          "width": 148,
+          "x": 131,
+          "y": 225,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "persistentUuid": "0c791408-5c1b-4590-b255-a4fea2943a1c",
+              "type": "string",
+              "value": "03"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 457,
+          "layer": "",
+          "name": "plat",
+          "persistentUuid": "6d5275f1-0b2d-4cca-b965-4e6e4ac4c74f",
+          "width": 53,
+          "x": 176,
+          "y": 226,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "03"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 457,
+          "layer": "",
+          "name": "plat",
+          "persistentUuid": "89f53eee-e29d-43f0-afee-dc968e2d7899",
+          "width": 53,
+          "x": 1092,
+          "y": 226,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "03"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 60,
+          "layer": "",
+          "name": "fake_ground",
+          "persistentUuid": "77134392-e523-4da9-a930-4381c98aa195",
+          "width": 148,
+          "x": 1046,
+          "y": 225,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "persistentUuid": "0c791408-5c1b-4590-b255-a4fea2943a1c",
+              "type": "string",
+              "value": "03"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "",
+          "name": "score_soda",
+          "persistentUuid": "9ce11108-fd6b-4127-b48b-b5e7f38d5397",
+          "width": 48,
+          "x": 179,
+          "y": 142,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "03"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "",
+          "name": "score_soda",
+          "persistentUuid": "f84d109b-5ba7-4bf4-aead-f2dbed0ff1a0",
+          "width": 48,
+          "x": 1095,
+          "y": 141,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "03"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "",
+          "name": "score_soda",
+          "persistentUuid": "c1e04c9c-be3b-4c4d-9dfb-977d028b1961",
+          "width": 48,
+          "x": 443,
+          "y": 310,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "03"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "",
+          "name": "score_soda",
+          "persistentUuid": "0e8854c6-e91c-46ab-9e38-55ea130ae935",
+          "width": 48,
+          "x": 856,
+          "y": 312,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "03"
+            }
+          ]
+        }
+      ],
+      "editionSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 1.2952916551236018,
+        "windowMask": false
+      }
+    },
+    {
+      "associatedLayout": "Untitled scene",
+      "name": "04",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 60,
+          "layer": "",
+          "name": "ground",
+          "persistentUuid": "7f8f057d-c958-4e0e-98cb-29b175ae9124",
+          "width": 1280,
+          "x": 0,
+          "y": 683,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "persistentUuid": "83e10ec4-2ed5-42c0-a2c8-d6181cdf3dfe",
+              "type": "string",
+              "value": "04"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 180,
+          "layer": "",
+          "name": "dirt",
+          "persistentUuid": "2459a6a6-bbc6-42c5-b963-95e980cf6541",
+          "width": 1280,
+          "x": 0,
+          "y": 743,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "persistentUuid": "3879ae8b-9e74-4acd-8bd9-2ce338119dc3",
+              "type": "string",
+              "value": "04"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "",
+          "name": "score_soda",
+          "persistentUuid": "101d8561-b54e-430c-9608-9894686a6efb",
+          "width": 48,
+          "x": 861,
+          "y": 367,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "04"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 60,
+          "keepRatio": true,
+          "layer": "",
+          "name": "fake_ground",
+          "persistentUuid": "77c97264-aea9-4c5d-8987-3cc4ac18f232",
+          "width": 624,
+          "x": 569,
+          "y": 264,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "persistentUuid": "0c791408-5c1b-4590-b255-a4fea2943a1c",
+              "type": "string",
+              "value": "04"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 418,
+          "layer": "",
+          "name": "plat",
+          "persistentUuid": "e17968b7-d46b-43e0-901f-9ca5c1c730fd",
+          "width": 53,
+          "x": 860,
+          "y": 265,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "04"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "",
+          "name": "score_soda",
+          "persistentUuid": "cf4b4823-8ca5-4269-970b-6c1857ab4676",
+          "width": 48,
+          "x": 578,
+          "y": 175,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "04"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "",
+          "name": "score_soda",
+          "persistentUuid": "37d04e82-ece1-4237-9b2c-f4e03af110eb",
+          "width": 48,
+          "x": 1134,
+          "y": 179,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "04"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 60,
+          "keepRatio": true,
+          "layer": "",
+          "name": "fake_ground",
+          "persistentUuid": "031ad5f0-e592-4fdb-8bdf-cd380af067dc",
+          "width": 692,
+          "x": 224,
+          "y": 452,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "persistentUuid": "0c791408-5c1b-4590-b255-a4fea2943a1c",
+              "type": "string",
+              "value": "04"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "",
+          "name": "score_soda",
+          "persistentUuid": "c4ec1783-1e47-4086-8f7c-a797ce6433f3",
+          "width": 48,
+          "x": 228,
+          "y": 362,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "04"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "",
+          "name": "score_soda",
+          "persistentUuid": "c378e733-77f6-4b24-bd67-ba42c96d040b",
+          "width": 48,
+          "x": 607,
+          "y": 600,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "04"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "",
+          "name": "score_soda",
+          "persistentUuid": "cc193dc1-7d65-4a77-a0eb-ef3bd1e9eb0b",
+          "width": 48,
+          "x": 111,
+          "y": 600,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "04"
+            }
+          ]
+        }
+      ],
+      "editionSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.8700232859857361,
+        "windowMask": false
+      }
+    },
+    {
+      "associatedLayout": "Untitled scene",
+      "name": "05",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 60,
+          "layer": "",
+          "name": "ground",
+          "persistentUuid": "7f8f057d-c958-4e0e-98cb-29b175ae9124",
+          "width": 1280,
+          "x": 0,
+          "y": 683,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "persistentUuid": "83e10ec4-2ed5-42c0-a2c8-d6181cdf3dfe",
+              "type": "string",
+              "value": "05"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 180,
+          "layer": "",
+          "name": "dirt",
+          "persistentUuid": "2459a6a6-bbc6-42c5-b963-95e980cf6541",
+          "width": 1280,
+          "x": 0,
+          "y": 743,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "persistentUuid": "3879ae8b-9e74-4acd-8bd9-2ce338119dc3",
+              "type": "string",
+              "value": "05"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "",
+          "name": "score_soda",
+          "persistentUuid": "101d8561-b54e-430c-9608-9894686a6efb",
+          "width": 48,
+          "x": 750,
+          "y": 389,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "05"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 60,
+          "keepRatio": true,
+          "layer": "",
+          "name": "fake_ground",
+          "persistentUuid": "77c97264-aea9-4c5d-8987-3cc4ac18f232",
+          "width": 1044,
+          "x": 162,
+          "y": 321,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "persistentUuid": "0c791408-5c1b-4590-b255-a4fea2943a1c",
+              "type": "string",
+              "value": "05"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 361,
+          "layer": "",
+          "name": "plat",
+          "persistentUuid": "e17968b7-d46b-43e0-901f-9ca5c1c730fd",
+          "width": 53,
+          "x": 937,
+          "y": 322,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "05"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "",
+          "name": "score_soda",
+          "persistentUuid": "cf4b4823-8ca5-4269-970b-6c1857ab4676",
+          "width": 48,
+          "x": 1156,
+          "y": 237,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "05"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "",
+          "name": "score_soda",
+          "persistentUuid": "37d04e82-ece1-4237-9b2c-f4e03af110eb",
+          "width": 48,
+          "x": 228,
+          "y": 307,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "05"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 60,
+          "keepRatio": true,
+          "layer": "",
+          "name": "fake_ground",
+          "persistentUuid": "031ad5f0-e592-4fdb-8bdf-cd380af067dc",
+          "width": 591,
+          "x": 224,
+          "y": 469,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "persistentUuid": "0c791408-5c1b-4590-b255-a4fea2943a1c",
+              "type": "string",
+              "value": "05"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "",
+          "name": "score_soda",
+          "persistentUuid": "c4ec1783-1e47-4086-8f7c-a797ce6433f3",
+          "width": 48,
+          "x": 101,
+          "y": 80,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "05"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "",
+          "name": "score_soda",
+          "persistentUuid": "c378e733-77f6-4b24-bd67-ba42c96d040b",
+          "width": 48,
+          "x": 617,
+          "y": 598,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "05"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "",
+          "name": "score_soda",
+          "persistentUuid": "cc193dc1-7d65-4a77-a0eb-ef3bd1e9eb0b",
+          "width": 48,
+          "x": 648,
+          "y": 82,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "05"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 517,
+          "layer": "",
+          "name": "plat",
+          "persistentUuid": "72ab14d6-c7dd-4404-8c59-ba6ee744a062",
+          "width": 53,
+          "x": 226,
+          "y": 166,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "05"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 60,
+          "keepRatio": true,
+          "layer": "",
+          "name": "fake_ground",
+          "persistentUuid": "61953ad2-b4f3-492d-9a8e-e07797b40900",
+          "width": 608,
+          "x": 96,
+          "y": 165,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "persistentUuid": "0c791408-5c1b-4590-b255-a4fea2943a1c",
+              "type": "string",
+              "value": "05"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "",
+          "name": "score_soda",
+          "persistentUuid": "62dcd389-4921-4629-a4e1-acf700e64ad8",
+          "width": 48,
+          "x": 51,
+          "y": 600,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "05"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1.0000000000000002,
+          "height": 65,
+          "layer": "",
+          "name": "blinky",
+          "persistentUuid": "1d786dc6-a505-4f71-8790-dca9b671a6d6",
+          "width": 65,
+          "x": 486,
+          "y": 317,
+          "zOrder": 65,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 1.0269425874981175,
+        "windowMask": false
+      }
+    },
+    {
+      "associatedLayout": "Untitled scene",
+      "name": "06",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 60,
+          "layer": "",
+          "name": "ground",
+          "persistentUuid": "7f8f057d-c958-4e0e-98cb-29b175ae9124",
+          "width": 1280,
+          "x": 0,
+          "y": 683,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "persistentUuid": "83e10ec4-2ed5-42c0-a2c8-d6181cdf3dfe",
+              "type": "string",
+              "value": "06"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 180,
+          "layer": "",
+          "name": "dirt",
+          "persistentUuid": "2459a6a6-bbc6-42c5-b963-95e980cf6541",
+          "width": 1280,
+          "x": 0,
+          "y": 743,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "persistentUuid": "3879ae8b-9e74-4acd-8bd9-2ce338119dc3",
+              "type": "string",
+              "value": "06"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 60,
+          "keepRatio": true,
+          "layer": "",
+          "name": "fake_ground",
+          "persistentUuid": "031ad5f0-e592-4fdb-8bdf-cd380af067dc",
+          "width": 872,
+          "x": 224,
+          "y": 469,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "persistentUuid": "0c791408-5c1b-4590-b255-a4fea2943a1c",
+              "type": "string",
+              "value": "06"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 213,
+          "layer": "",
+          "name": "plat",
+          "persistentUuid": "b2bbf854-b894-4647-8496-8ff52b31fa93",
+          "width": 53,
+          "x": 259,
+          "y": 470,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "06"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "",
+          "name": "score_soda",
+          "persistentUuid": "cc193dc1-7d65-4a77-a0eb-ef3bd1e9eb0b",
+          "width": 48,
+          "x": 243,
+          "y": 383,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "06"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 213,
+          "layer": "",
+          "name": "plat",
+          "persistentUuid": "5fcdb724-759b-453d-95c7-712a6906e4a7",
+          "width": 53,
+          "x": 995,
+          "y": 470,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "06"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 213,
+          "layer": "",
+          "name": "plat",
+          "persistentUuid": "320ab433-1426-4e87-86d3-1cf3a7149787",
+          "width": 53,
+          "x": 640,
+          "y": 256,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "06"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 60,
+          "keepRatio": true,
+          "layer": "",
+          "name": "fake_ground",
+          "persistentUuid": "ced1a7e6-e96a-49d9-a37d-9596e9a11ab9",
+          "width": 438,
+          "x": 449,
+          "y": 255,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "persistentUuid": "0c791408-5c1b-4590-b255-a4fea2943a1c",
+              "type": "string",
+              "value": "06"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "",
+          "name": "score_soda",
+          "persistentUuid": "b32c0454-1a51-403c-9de8-a2a058cc6daf",
+          "width": 48,
+          "x": 642,
+          "y": 166,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "06"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "",
+          "name": "score_soda",
+          "persistentUuid": "482af4dc-6054-43a6-8ee4-53a8d77d5391",
+          "width": 48,
+          "x": 996,
+          "y": 385,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "06"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "",
+          "name": "score_soda",
+          "persistentUuid": "bf95bc10-c7d9-4463-95da-518f2a2b9b7e",
+          "width": 48,
+          "x": 639,
+          "y": 596,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "LayoutName",
+              "type": "string",
+              "value": "06"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1.0000000000000002,
+          "height": 65,
+          "layer": "",
+          "name": "blinky",
+          "persistentUuid": "7a45618e-0ff5-4319-bf79-51c1654087dc",
+          "width": 65,
+          "x": 663,
+          "y": 463,
+          "zOrder": 65,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 1.2952916551236024,
         "windowMask": false
       }
     },
