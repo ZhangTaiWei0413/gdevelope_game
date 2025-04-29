@@ -8403,6 +8403,11 @@
               "name": "fakegroundkeepright",
               "type": "boolean",
               "value": false
+            },
+            {
+              "name": "donotmove3",
+              "type": "boolean",
+              "value": false
             }
           ],
           "effects": [],
@@ -8972,7 +8977,12 @@
             }
           ],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "InOnScreen",
+              "type": "IsOnScreen::InOnScreen"
+            }
+          ],
           "animations": [
             {
               "name": "",
@@ -9086,7 +9096,12 @@
             }
           ],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "InOnScreen",
+              "type": "IsOnScreen::InOnScreen"
+            }
+          ],
           "animations": [
             {
               "name": "",
@@ -9159,7 +9174,12 @@
             }
           ],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "InOnScreen",
+              "type": "IsOnScreen::InOnScreen"
+            }
+          ],
           "animations": [
             {
               "name": "..\\..\\..\\Downloads\\istockphoto-1227320973-612x612",
@@ -13415,19 +13435,96 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "如果不正在爬&不正在尋路模式=可以移動"
+              "comment": "尋路邏輯"
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "ObjectVariableAsBoolean"
+                    "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                  },
+                  "parameters": [
+                    "player",
+                    "PlatformerObject",
+                    "fake_ground",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "player",
+                    "touchfakeground",
+                    "True"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                  },
+                  "parameters": [
+                    "player",
+                    "PlatformerObject",
+                    "ground",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "player",
+                    "touchfakeground",
+                    "False"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::IsObjectOnGivenFloor"
                   },
                   "parameters": [
                     "blinky",
-                    "climb",
-                    "="
+                    "PlatformerObject",
+                    "ground",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PosY"
+                  },
+                  "parameters": [
+                    "blinky",
+                    ">",
+                    "player.Y()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "player",
+                    "touchfakeground",
+                    "True"
                   ]
                 },
                 {
@@ -13436,7 +13533,7 @@
                   },
                   "parameters": [
                     "blinky",
-                    "donotmove",
+                    "groundkeepleft",
                     ""
                   ]
                 },
@@ -13446,7 +13543,170 @@
                   },
                   "parameters": [
                     "blinky",
-                    "donotmove2",
+                    "groundkeepright",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "plat",
+                        "LayoutName",
+                        "=",
+                        "closest"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PickNearest"
+                      },
+                      "parameters": [
+                        "plat",
+                        "blinky.X()",
+                        "blinky.Y()",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BoundingBoxBottom"
+                      },
+                      "parameters": [
+                        "plat",
+                        "=",
+                        "blinky.Y()"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PosX"
+                          },
+                          "parameters": [
+                            "blinky",
+                            ">",
+                            "plat.X()"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "blinky",
+                            "groundkeepleft",
+                            "True"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "blinky",
+                            "donotmove",
+                            "True"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PosX"
+                          },
+                          "parameters": [
+                            "blinky",
+                            "<",
+                            "plat.X()"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "blinky",
+                            "groundkeepright",
+                            "True"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "blinky",
+                            "donotmove",
+                            "True"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "PlatformerObject",
+                    "fake_ground",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PosY"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "<",
+                    "player.Y()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "keepleft",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "keepright",
                     ""
                   ]
                 }
@@ -13461,30 +13721,31 @@
                         "value": "PosX"
                       },
                       "parameters": [
-                        "player",
+                        "blinky",
                         ">",
-                        "blinky.X()"
+                        "player.X()"
                       ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "PlatformBehavior::SimulateRightKey"
+                        "value": "SetObjectVariableAsBoolean"
                       },
                       "parameters": [
                         "blinky",
-                        "PlatformerObject"
+                        "keepleft",
+                        "True"
                       ]
                     },
                     {
                       "type": {
-                        "value": "FlippableCapability::FlippableBehavior::FlipX"
+                        "value": "SetObjectVariableAsBoolean"
                       },
                       "parameters": [
                         "blinky",
-                        "Flippable",
-                        "yes"
+                        "donotmove3",
+                        "True"
                       ]
                     }
                   ]
@@ -13497,16 +13758,1076 @@
                         "value": "PosX"
                       },
                       "parameters": [
-                        "player",
+                        "blinky",
                         "<",
-                        "blinky.X()"
+                        "player.X()"
                       ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "PlatformBehavior::SimulateLeftKey"
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "keepright",
+                        "True"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "donotmove3",
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "PlatformerObject",
+                    "fake_ground",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PosY"
+                  },
+                  "parameters": [
+                    "blinky",
+                    ">",
+                    "player.Y()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "player",
+                    "touchfakeground",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "fakegroundkeepleft",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "fakegroundkeepright",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "AllSceneObjects",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringObjectVariable"
+                          },
+                          "parameters": [
+                            "AllSceneObjects",
+                            "LayoutName",
+                            "=",
+                            "closest"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "ObjectPickingTools::PickLowestVariableValueCondition"
+                              },
+                              "parameters": [
+                                "",
+                                "plat",
+                                "ToString(plat.Y())",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "StringObjectVariable"
+                              },
+                              "parameters": [
+                                "plat",
+                                "LayoutName",
+                                "=",
+                                "closest"
+                              ]
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "PosX"
+                                  },
+                                  "parameters": [
+                                    "blinky",
+                                    ">",
+                                    "plat.X()"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "SetObjectVariableAsBoolean"
+                                  },
+                                  "parameters": [
+                                    "blinky",
+                                    "fakegroundkeepleft",
+                                    "True"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "SetObjectVariableAsBoolean"
+                                  },
+                                  "parameters": [
+                                    "blinky",
+                                    "donotmove2",
+                                    "True"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "PosX"
+                                  },
+                                  "parameters": [
+                                    "blinky",
+                                    "<",
+                                    "plat.X()"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "SetObjectVariableAsBoolean"
+                                  },
+                                  "parameters": [
+                                    "blinky",
+                                    "fakegroundkeepright",
+                                    "True"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "SetObjectVariableAsBoolean"
+                                  },
+                                  "parameters": [
+                                    "blinky",
+                                    "donotmove2",
+                                    "True"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringObjectVariable"
+                          },
+                          "parameters": [
+                            "AllSceneObjects",
+                            "LayoutName",
+                            "!=",
+                            "closest"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "blinky",
+                            "fakegroundkeepleft",
+                            "False"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "blinky",
+                            "fakegroundkeepright",
+                            "False"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "blinky",
+                            "donotmove2",
+                            "False"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosY"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "<=",
+                    "player.Y()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "groundkeepleft",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "groundkeepright",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "fakegroundkeepleft",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "fakegroundkeepright",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "donotmove",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "donotmove2",
+                    "False"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "f對f找路取消"
+            },
+            {
+              "disabled": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "PosY"
+                      },
+                      "parameters": [
+                        "player",
+                        ">=",
+                        "blinky.Y()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "PlatformerObject",
+                        "fake_ground",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "fakegroundkeepleft",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "fakegroundkeepright",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "donotmove2",
+                    "False"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "尋路模式"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "groundkeepleft",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateLeftKey"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "PlatformerObject"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "Flippable",
+                    "no"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "plat",
+                        "",
+                        "",
+                        "yes"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::IsOnLadder"
+                          },
+                          "parameters": [
+                            "player",
+                            "PlatformerObject"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PosX"
+                              },
+                              "parameters": [
+                                "blinky",
+                                "=",
+                                "player.X()"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetObjectVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "blinky",
+                                "donotmove",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetObjectVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "blinky",
+                                "groundkeepleft",
+                                ""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PosX"
+                              },
+                              "parameters": [
+                                "blinky",
+                                "!=",
+                                "player.X()"
+                              ]
+                            }
+                          ],
+                          "actions": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "PlatformBehavior::IsOnLadder"
+                          },
+                          "parameters": [
+                            "player",
+                            "PlatformerObject"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "blinky",
+                            "donotmove",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "blinky",
+                            "groundkeepleft",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "groundkeepright",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateRightKey"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "PlatformerObject"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "Flippable",
+                    "yes"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "plat",
+                        "",
+                        "",
+                        "yes"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "donotmove",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "groundkeepright",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "keepleft",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateLeftKey"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "PlatformerObject"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "Flippable",
+                    "no"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "player",
+                        ">",
+                        "blinky.X()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                      },
+                      "parameters": [
+                        "player",
+                        "PlatformerObject"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "keepright",
+                        "True"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "keepleft",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::IsFalling"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "PlatformerObject"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "keepleft",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "donotmove3",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "keepright",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateRightKey"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "PlatformerObject"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "Flippable",
+                    "yes"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "player",
+                        "<",
+                        "blinky.X()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                      },
+                      "parameters": [
+                        "player",
+                        "PlatformerObject"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "keepleft",
+                        "True"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "keepright",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::IsFalling"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "PlatformerObject"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "keepright",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "donotmove3",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "fakegroundkeepleft",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateLeftKey"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "PlatformerObject"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "Flippable",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "keepleft",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "keepright",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "groundkeepleft",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "groundkeepright",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "donotmove",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "donotmove3",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "plat",
+                        "",
+                        "",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "plat",
+                        "LayoutName",
+                        "=",
+                        "closest"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "climb",
+                        "True"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::SimulateLadderKey"
                       },
                       "parameters": [
                         "blinky",
@@ -13515,11 +14836,330 @@
                     },
                     {
                       "type": {
-                        "value": "FlippableCapability::FlippableBehavior::FlipX"
+                        "value": "PlatformBehavior::SimulateUpKey"
                       },
                       "parameters": [
                         "blinky",
-                        "Flippable",
+                        "PlatformerObject"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "donotmove2",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "fakegroundkeepleft",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "disabled": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "plat",
+                        "",
+                        "",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "plat",
+                        "LayoutName",
+                        "!=",
+                        "closest"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "PlatformerObject",
+                        "ground",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "donotmove2",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "fakegroundkeepleft",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "fakegroundkeepright",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateRightKey"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "PlatformerObject"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "Flippable",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "keepleft",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "keepright",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "groundkeepright",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "groundkeepleft",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "donotmove",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "blinky",
+                    "donotmove3",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "plat",
+                        "",
+                        "",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "plat",
+                        "LayoutName",
+                        "=",
+                        "closest"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "climb",
+                        "True"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::SimulateLadderKey"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "PlatformerObject"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::SimulateUpKey"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "PlatformerObject"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "donotmove2",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "fakegroundkeepright",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "disabled": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "plat",
+                        "",
+                        "",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "plat",
+                        "LayoutName",
+                        "!=",
+                        "closest"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "PlatformerObject",
+                        "ground",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "donotmove2",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "blinky",
+                        "fakegroundkeepright",
                         ""
                       ]
                     }
@@ -13537,23 +15177,11 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "如果幽靈不在空中平台&應該爬"
+              "comment": "如果玩家應該爬"
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "PlatformBehavior::IsObjectOnGivenFloor"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "PlatformerObject",
-                    "fake_ground",
-                    ""
-                  ]
-                },
                 {
                   "type": {
                     "value": "ObjectVariableAsBoolean"
@@ -13833,30 +15461,19 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "尋路邏輯"
+              "comment": "如果不正在爬&不正在尋路模式=可以移動"
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                    "value": "ObjectVariableAsBoolean"
                   },
                   "parameters": [
                     "blinky",
-                    "PlatformerObject",
-                    "fake_ground",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PosY"
-                  },
-                  "parameters": [
-                    "player",
-                    ">",
-                    "blinky.Y()"
+                    "climb",
+                    "="
                   ]
                 },
                 {
@@ -13865,657 +15482,41 @@
                   },
                   "parameters": [
                     "blinky",
-                    "keepleft",
+                    "donotmove",
                     ""
                   ]
                 },
                 {
                   "type": {
                     "value": "ObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "keepright",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "PosX"
-                      },
-                      "parameters": [
-                        "player",
-                        "<",
-                        "blinky.X()"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "keepleft",
-                        "True"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "donotmove",
-                        "True"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "PosX"
-                      },
-                      "parameters": [
-                        "player",
-                        ">",
-                        "blinky.X()"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "keepright",
-                        "True"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "donotmove",
-                        "True"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "PlatformBehavior::IsObjectOnGivenFloor"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "PlatformerObject",
-                    "ground",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PosY"
-                  },
-                  "parameters": [
-                    "player",
-                    "<",
-                    "blinky.Y()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "player",
-                    "touchfakeground",
-                    "True"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "groundkeepleft",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "groundkeepright",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "StringObjectVariable"
-                      },
-                      "parameters": [
-                        "plat",
-                        "LayoutName",
-                        "=",
-                        "closest"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "PickNearest"
-                      },
-                      "parameters": [
-                        "plat",
-                        "blinky.X()",
-                        "blinky.Y()",
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "PosX"
-                          },
-                          "parameters": [
-                            "blinky",
-                            ">",
-                            "plat.X()"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetObjectVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "blinky",
-                            "groundkeepleft",
-                            "True"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetObjectVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "blinky",
-                            "donotmove",
-                            "True"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "PosX"
-                          },
-                          "parameters": [
-                            "blinky",
-                            "<",
-                            "plat.X()"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetObjectVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "blinky",
-                            "groundkeepright",
-                            "True"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetObjectVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "blinky",
-                            "donotmove",
-                            "True"
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "PlatformBehavior::IsObjectOnGivenFloor"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "PlatformerObject",
-                    "fake_ground",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PosY"
-                  },
-                  "parameters": [
-                    "player",
-                    "<",
-                    "blinky.Y()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "player",
-                    "touchfakeground",
-                    "True",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "fakegroundkeepleft",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "fakegroundkeepright",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "StringObjectVariable"
-                      },
-                      "parameters": [
-                        "plat",
-                        "LayoutName",
-                        "=",
-                        "closest"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ObjectPickingTools::PickLowestVariableValueCondition"
-                      },
-                      "parameters": [
-                        "",
-                        "plat",
-                        "ToString(plat.Y())",
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "PosX"
-                          },
-                          "parameters": [
-                            "blinky",
-                            ">",
-                            "plat.X()"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetObjectVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "blinky",
-                            "fakegroundkeepleft",
-                            "True"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetObjectVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "blinky",
-                            "donotmove2",
-                            "True"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "PosX"
-                          },
-                          "parameters": [
-                            "blinky",
-                            "<",
-                            "plat.X()"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetObjectVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "blinky",
-                            "fakegroundkeepright",
-                            "True"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetObjectVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "blinky",
-                            "donotmove2",
-                            "True"
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "f對f找路取消"
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Or"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "PosY"
-                      },
-                      "parameters": [
-                        "player",
-                        ">=",
-                        "blinky.Y()"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "PlatformBehavior::IsObjectOnGivenFloor"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "PlatformerObject",
-                        "fake_ground",
-                        ""
-                      ]
-                    }
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "fakegroundkeepleft",
-                    "False"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "fakegroundkeepright",
-                    "False"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetObjectVariableAsBoolean"
                   },
                   "parameters": [
                     "blinky",
                     "donotmove2",
-                    "False"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "PlatformBehavior::IsObjectOnGivenFloor"
-                  },
-                  "parameters": [
-                    "player",
-                    "PlatformerObject",
-                    "fake_ground",
                     ""
                   ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "player",
-                    "touchfakeground",
-                    "True"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "PlatformBehavior::IsObjectOnGivenFloor"
-                  },
-                  "parameters": [
-                    "player",
-                    "PlatformerObject",
-                    "ground",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "player",
-                    "touchfakeground",
-                    "False"
-                  ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "PosY"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "=",
-                        "player.Y()"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "groundkeepleft",
-                        "False"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "groundkeepright",
-                        "False"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "donotmove",
-                        "False"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "尋路模式"
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+                },
                 {
                   "type": {
                     "value": "ObjectVariableAsBoolean"
                   },
                   "parameters": [
                     "blinky",
-                    "keepleft",
-                    "True"
+                    "donotmove3",
+                    ""
                   ]
-                }
-              ],
-              "actions": [
+                },
                 {
                   "type": {
-                    "value": "PlatformBehavior::SimulateLeftKey"
+                    "value": "PlatformBehavior::IsFalling"
                   },
                   "parameters": [
                     "blinky",
                     "PlatformerObject"
                   ]
-                },
-                {
-                  "type": {
-                    "value": "FlippableCapability::FlippableBehavior::FlipX"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "Flippable",
-                    "no"
-                  ]
                 }
               ],
+              "actions": [],
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -14529,114 +15530,30 @@
                         ">",
                         "blinky.X()"
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
-                      },
-                      "parameters": [
-                        "player",
-                        "PlatformerObject"
-                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "keepright",
-                        "True"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "keepleft",
-                        ""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "PlatformBehavior::IsFalling"
+                        "value": "PlatformBehavior::SimulateRightKey"
                       },
                       "parameters": [
                         "blinky",
                         "PlatformerObject"
                       ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "keepleft",
-                        ""
-                      ]
                     },
                     {
                       "type": {
-                        "value": "SetObjectVariableAsBoolean"
+                        "value": "FlippableCapability::FlippableBehavior::FlipX"
                       },
                       "parameters": [
                         "blinky",
-                        "donotmove",
-                        ""
+                        "Flippable",
+                        "yes"
                       ]
                     }
                   ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "ObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "keepright",
-                    "True"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlatformBehavior::SimulateRightKey"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "PlatformerObject"
-                  ]
                 },
-                {
-                  "type": {
-                    "value": "FlippableCapability::FlippableBehavior::FlipX"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "Flippable",
-                    "yes"
-                  ]
-                }
-              ],
-              "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -14649,144 +15566,12 @@
                         "<",
                         "blinky.X()"
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
-                      },
-                      "parameters": [
-                        "player",
-                        "PlatformerObject"
-                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "keepleft",
-                        "True"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "keepright",
-                        ""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "PlatformBehavior::IsFalling"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "PlatformerObject"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "keepright",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "donotmove",
-                        ""
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "ObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "groundkeepleft",
-                    "True"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlatformBehavior::SimulateLeftKey"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "PlatformerObject"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "FlippableCapability::FlippableBehavior::FlipX"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "Flippable",
-                    "no"
-                  ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "plat",
-                        "",
-                        "",
-                        "yes"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "climb",
-                        "True"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "PlatformBehavior::SimulateLadderKey"
+                        "value": "PlatformBehavior::SimulateLeftKey"
                       },
                       "parameters": [
                         "blinky",
@@ -14795,589 +15580,11 @@
                     },
                     {
                       "type": {
-                        "value": "PlatformBehavior::SimulateUpKey"
+                        "value": "FlippableCapability::FlippableBehavior::FlipX"
                       },
                       "parameters": [
                         "blinky",
-                        "PlatformerObject"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "donotmove",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "groundkeepleft",
-                        ""
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "ObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "groundkeepright",
-                    "True"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlatformBehavior::SimulateRightKey"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "PlatformerObject"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "FlippableCapability::FlippableBehavior::FlipX"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "Flippable",
-                    "yes"
-                  ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "plat",
-                        "",
-                        "",
-                        "yes"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "climb",
-                        "True"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "PlatformBehavior::SimulateLadderKey"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "PlatformerObject"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "PlatformBehavior::SimulateUpKey"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "PlatformerObject"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "donotmove",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "groundkeepright",
-                        ""
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "ObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "fakegroundkeepleft",
-                    "True"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlatformBehavior::SimulateLeftKey"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "PlatformerObject"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "FlippableCapability::FlippableBehavior::FlipX"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "Flippable",
-                    "no"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "keepleft",
-                    "False"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "keepright",
-                    "False"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "groundkeepleft",
-                    "False"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "groundkeepright",
-                    "False"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "donotmove",
-                    "False"
-                  ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "plat",
-                        "",
-                        "",
-                        "yes"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "StringObjectVariable"
-                      },
-                      "parameters": [
-                        "plat",
-                        "LayoutName",
-                        "=",
-                        "closest"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "climb",
-                        "True"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "PlatformBehavior::SimulateLadderKey"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "PlatformerObject"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "PlatformBehavior::SimulateUpKey"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "PlatformerObject"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "donotmove2",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "fakegroundkeepleft",
-                        ""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "plat",
-                        "",
-                        "",
-                        "yes"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "StringObjectVariable"
-                      },
-                      "parameters": [
-                        "plat",
-                        "LayoutName",
-                        "!=",
-                        "closest"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "PlatformBehavior::IsObjectOnGivenFloor"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "PlatformerObject",
-                        "ground",
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "donotmove2",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "fakegroundkeepleft",
-                        ""
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "ObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "fakegroundkeepright",
-                    "True"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlatformBehavior::SimulateRightKey"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "PlatformerObject"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "FlippableCapability::FlippableBehavior::FlipX"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "Flippable",
-                    "yes"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "keepleft",
-                    "False"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "keepright",
-                    "False"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "groundkeepright",
-                    "False"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "groundkeepleft",
-                    "False"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "blinky",
-                    "donotmove",
-                    "False"
-                  ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "plat",
-                        "",
-                        "",
-                        "yes"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "StringObjectVariable"
-                      },
-                      "parameters": [
-                        "plat",
-                        "LayoutName",
-                        "=",
-                        "closest"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "climb",
-                        "True"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "PlatformBehavior::SimulateLadderKey"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "PlatformerObject"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "PlatformBehavior::SimulateUpKey"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "PlatformerObject"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "donotmove2",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "fakegroundkeepright",
-                        ""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "plat",
-                        "",
-                        "",
-                        "yes"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "StringObjectVariable"
-                      },
-                      "parameters": [
-                        "plat",
-                        "LayoutName",
-                        "!=",
-                        "closest"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "PlatformBehavior::IsObjectOnGivenFloor"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "PlatformerObject",
-                        "ground",
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "donotmove2",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "blinky",
-                        "fakegroundkeepright",
+                        "Flippable",
                         ""
                       ]
                     }
@@ -24287,7 +24494,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.2952916551236018,
+        "zoomFactor": 0.6040838749988925,
         "windowMask": false
       }
     },
