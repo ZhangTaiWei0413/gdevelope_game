@@ -8028,6 +8028,192 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
+      "name": "Press_A_to_quit",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Grey Button_Hovered.png",
+          "tiled": false,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Idle": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Grey Button_Idle.png",
+          "tiled": false,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Press A to Quit",
+          "font": "zh-cn.ttf",
+          "textAlignment": "center",
+          "characterSize": 35,
+          "color": {
+            "b": 79,
+            "g": 72,
+            "r": 72
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Press A to Quit",
+            "font": "zh-cn.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 35,
+            "color": "72;72;79"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Grey Button_Pressed.png",
+          "tiled": false,
+          "topMargin": 32,
+          "width": 256
+        }
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "quit",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "確定退出遊戲?",
+      "font": "zh-cn.ttf",
+      "textAlignment": "left",
+      "characterSize": 50,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "確定退出遊戲?",
+        "font": "zh-cn.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 50,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "stop",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "quit.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 49,
+                        "y": 190
+                      },
+                      {
+                        "x": 450,
+                        "y": 190
+                      },
+                      {
+                        "x": 450,
+                        "y": 294
+                      },
+                      {
+                        "x": 49,
+                        "y": 294
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -8035,10 +8221,34 @@
     "children": [
       {
         "objectName": "player"
+      },
+      {
+        "objectName": "Press_A_to_quit"
+      },
+      {
+        "objectName": "quit"
+      },
+      {
+        "objectName": "stop"
       }
     ]
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "stopui",
+      "objects": [
+        {
+          "name": "Press_A_to_quit"
+        },
+        {
+          "name": "quit"
+        },
+        {
+          "name": "stop"
+        }
+      ]
+    }
+  ],
   "variables": [
     {
       "folded": true,
@@ -8060,7 +8270,12 @@
     {
       "name": "end",
       "type": "boolean",
-      "value": true
+      "value": false
+    },
+    {
+      "name": "sstop",
+      "type": "boolean",
+      "value": false
     }
   ],
   "layouts": [
@@ -8084,7 +8299,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5204003343770159,
+        "zoomFactor": 0.7013989077057209,
         "windowMask": false
       },
       "objectsGroups": [
@@ -8128,9 +8343,6 @@
             },
             {
               "name": "score2"
-            },
-            {
-              "name": "Press_A_to_restart"
             }
           ]
         },
@@ -8277,6 +8489,11 @@
           "name": "Variable",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "bpress",
+          "type": "boolean",
+          "value": false
         }
       ],
       "instances": [
@@ -8442,23 +8659,6 @@
           "x": -19,
           "y": -18,
           "zOrder": 67,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 48,
-          "height": 106,
-          "keepRatio": true,
-          "layer": "deadui",
-          "name": "Press_A_to_restart",
-          "persistentUuid": "8be08bfa-c591-4b4b-b918-5d68a2e0d407",
-          "width": 504,
-          "x": 389,
-          "y": 562,
-          "zOrder": 78,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -8669,6 +8869,55 @@
           "x": 456,
           "y": 533,
           "zOrder": 90,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 3866,
+          "layer": "stopui",
+          "name": "stop",
+          "persistentUuid": "078cd07f-1372-4324-b893-34fc98413ade",
+          "width": 4127,
+          "x": -1343,
+          "y": -1520,
+          "zOrder": 84,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 48,
+          "height": 87,
+          "keepRatio": true,
+          "layer": "stopui",
+          "name": "Press_A_to_quit",
+          "persistentUuid": "9341ec28-aecf-4464-a8a0-7007b1b5b04c",
+          "width": 330,
+          "x": 470,
+          "y": 545,
+          "zOrder": 86,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "stopui",
+          "name": "quit",
+          "persistentUuid": "78d5087c-26a3-4d8c-96a6-eb8efc18f7c8",
+          "width": 0,
+          "x": 471,
+          "y": 327,
+          "zOrder": 85,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -9971,90 +10220,6 @@
           ]
         },
         {
-          "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
-          "name": "Press_A_to_restart",
-          "type": "PanelSpriteButton::PanelSpriteButton",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "LeftPadding": 16,
-            "RightPadding": 16,
-            "PressedLabelOffsetY": 10,
-            "BottomPadding": 32,
-            "TopPadding": 16,
-            "HoveredFadeOutDuration": 0.25
-          },
-          "childrenContent": {
-            "Hovered": {
-              "bottomMargin": 32,
-              "height": 106,
-              "leftMargin": 16,
-              "rightMargin": 16,
-              "texture": "Grey Button_Hovered.png",
-              "tiled": false,
-              "topMargin": 16,
-              "width": 256
-            },
-            "Idle": {
-              "bottomMargin": 32,
-              "height": 106,
-              "leftMargin": 16,
-              "rightMargin": 16,
-              "texture": "Grey Button_Idle.png",
-              "tiled": false,
-              "topMargin": 16,
-              "width": 256
-            },
-            "Label": {
-              "bold": false,
-              "italic": false,
-              "smoothed": true,
-              "underlined": false,
-              "string": "Press A to restart",
-              "font": "zh-cn.ttf",
-              "textAlignment": "center",
-              "characterSize": 60,
-              "color": {
-                "b": 79,
-                "g": 72,
-                "r": 72
-              },
-              "content": {
-                "bold": false,
-                "isOutlineEnabled": false,
-                "isShadowEnabled": false,
-                "italic": false,
-                "outlineColor": "255;255;255",
-                "outlineThickness": 2,
-                "shadowAngle": 90,
-                "shadowBlurRadius": 2,
-                "shadowColor": "0;0;0",
-                "shadowDistance": 4,
-                "shadowOpacity": 127,
-                "smoothed": true,
-                "underlined": false,
-                "text": "Press A to restart",
-                "font": "zh-cn.ttf",
-                "textAlignment": "center",
-                "verticalTextAlignment": "top",
-                "characterSize": 60,
-                "color": "72;72;79"
-              }
-            },
-            "Pressed": {
-              "bottomMargin": 16,
-              "height": 106,
-              "leftMargin": 16,
-              "rightMargin": 16,
-              "texture": "Grey Button_Pressed.png",
-              "tiled": false,
-              "topMargin": 32,
-              "width": 256
-            }
-          }
-        },
-        {
           "assetStoreId": "",
           "bold": false,
           "italic": false,
@@ -10659,6 +10824,90 @@
               "width": 256
             }
           }
+        },
+        {
+          "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
+          "name": "Press_A_to_restart",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 10,
+            "BottomPadding": 32,
+            "TopPadding": 16,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Hovered.png",
+              "tiled": false,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Idle": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Idle.png",
+              "tiled": false,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "Press A to restart",
+              "font": "zh-cn.ttf",
+              "textAlignment": "center",
+              "characterSize": 60,
+              "color": {
+                "b": 79,
+                "g": 72,
+                "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Press A to restart",
+                "font": "zh-cn.ttf",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 60,
+                "color": "72;72;79"
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Pressed.png",
+              "tiled": false,
+              "topMargin": 32,
+              "width": 256
+            }
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -10880,11 +11129,85 @@
             },
             {
               "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "stopui"
+              ]
+            },
+            {
+              "type": {
                 "value": "Montre"
               },
               "parameters": [
                 "ui",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeTimeScale"
+              },
+              "parameters": [
+                "",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "DeleteFichier"
+              },
+              "parameters": [
+                "\"playerdata\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GroupExists"
+                  },
+                  "parameters": [
+                    "\"playerdata\"",
+                    "\"score\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ReadNumberFromStorage"
+                  },
+                  "parameters": [
+                    "\"playerdata\"",
+                    "\"score\"",
+                    "",
+                    "maxscore"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "end",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Untitled scene\"",
+                    ""
+                  ]
+                }
               ]
             }
           ]
@@ -10914,6 +11237,318 @@
                 "closest",
                 "=",
                 "AllSceneObjects.LayoutName"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Gamepads::C_Button_released"
+              },
+              "parameters": [
+                "player",
+                "1",
+                "\"Start\"",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "bpress",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Gamepads::C_Button_pressed"
+              },
+              "parameters": [
+                "player",
+                "1",
+                "\"Start\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "stopui"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "bpress",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "deadui"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "stopui"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "ui",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "bpress",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeTimeScale"
+              },
+              "parameters": [
+                "",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Gamepads::C_Button_pressed"
+              },
+              "parameters": [
+                "player",
+                "1",
+                "\"Start\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Visible"
+              },
+              "parameters": [
+                "stopui"
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Visible"
+              },
+              "parameters": [
+                "deadui"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "bpress",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "deadui"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "ui"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "stopui",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "bpress",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeTimeScale"
+              },
+              "parameters": [
+                "",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TimeScale"
+              },
+              "parameters": [
+                "sstop",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "sstop",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TimeScale"
+              },
+              "parameters": [
+                "sstop",
+                "!=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "sstop",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "Visible"
+                      },
+                      "parameters": [
+                        "stopui"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Gamepads::C_Button_pressed"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        "\"A\"",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "Press_A_to_quit",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BackButton::doDefault"
+              },
+              "parameters": [
+                "",
+                ""
               ]
             }
           ]
@@ -10978,6 +11613,17 @@
               },
               "parameters": [
                 "NewSprite3",
+                "Opacity",
+                "=",
+                "175"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "stop",
                 "Opacity",
                 "=",
                 "175"
@@ -11859,6 +12505,39 @@
               "booleanParameters": {}
             }
           ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "stopui",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
         }
       ],
       "behaviorsSharedData": [
@@ -11928,7 +12607,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.27712740354431464,
+        "zoomFactor": 0.2961321692564805,
         "windowMask": false
       },
       "objectsGroups": [
@@ -12137,6 +12816,21 @@
         },
         {
           "name": "Variable",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "bpress",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "player",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Variable2",
           "type": "number",
           "value": 0
         }
@@ -12440,6 +13134,55 @@
           "x": 715,
           "y": 357,
           "zOrder": 83,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 3866,
+          "layer": "stopui",
+          "name": "stop",
+          "persistentUuid": "61564da6-56bc-42e0-ab81-40b1631a835d",
+          "width": 4127,
+          "x": -1216,
+          "y": -1514,
+          "zOrder": 84,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "stopui",
+          "name": "quit",
+          "persistentUuid": "21f307d2-919d-44a2-8a0a-fc4a6ebb7c5a",
+          "width": 0,
+          "x": 471,
+          "y": 327,
+          "zOrder": 85,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 48,
+          "height": 87,
+          "keepRatio": true,
+          "layer": "stopui",
+          "name": "Press_A_to_quit",
+          "persistentUuid": "ea4a60ac-cf68-4eb2-aec9-c538e1c3203c",
+          "width": 330,
+          "x": 470,
+          "y": 545,
+          "zOrder": 86,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -14339,15 +15082,77 @@
             },
             {
               "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "stopui"
+              ]
+            },
+            {
+              "type": {
                 "value": "Montre"
               },
               "parameters": [
                 "ui",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "ChangeTimeScale"
+              },
+              "parameters": [
+                "",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "DeleteFichier"
+              },
+              "parameters": [
+                "\"playerdata\""
+              ]
             }
           ],
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GroupExists"
+                  },
+                  "parameters": [
+                    "\"playerdata\"",
+                    "\"score\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ReadNumberFromStorage"
+                  },
+                  "parameters": [
+                    "\"playerdata\"",
+                    "\"score\"",
+                    "",
+                    "maxscore"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "end",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -14402,6 +15207,318 @@
                 "closest",
                 "=",
                 "AllSceneObjects.LayoutName"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Gamepads::C_Button_released"
+              },
+              "parameters": [
+                "player",
+                "1",
+                "\"Start\"",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "bpress",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Gamepads::C_Button_pressed"
+              },
+              "parameters": [
+                "player",
+                "1",
+                "\"Start\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "stopui"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "bpress",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "deadui"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "stopui"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "ui",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "bpress",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeTimeScale"
+              },
+              "parameters": [
+                "",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Gamepads::C_Button_pressed"
+              },
+              "parameters": [
+                "player",
+                "1",
+                "\"Start\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Visible"
+              },
+              "parameters": [
+                "stopui"
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Visible"
+              },
+              "parameters": [
+                "deadui"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "bpress",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "deadui"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "ui"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "stopui",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "bpress",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeTimeScale"
+              },
+              "parameters": [
+                "",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TimeScale"
+              },
+              "parameters": [
+                "sstop",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "sstop",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TimeScale"
+              },
+              "parameters": [
+                "sstop",
+                "!=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "sstop",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "Visible"
+                      },
+                      "parameters": [
+                        "stopui"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Gamepads::C_Button_pressed"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        "\"A\"",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "Press_A_to_quit",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BackButton::doDefault"
+              },
+              "parameters": [
+                "",
+                ""
               ]
             }
           ]
@@ -14466,6 +15583,17 @@
               },
               "parameters": [
                 "NewSprite3",
+                "Opacity",
+                "=",
+                "175"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "stop",
                 "Opacity",
                 "=",
                 "175"
@@ -15354,6 +16482,39 @@
               "booleanParameters": {}
             }
           ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "stopui",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
         }
       ],
       "behaviorsSharedData": [
@@ -16215,6 +17376,16 @@
                     "=",
                     "player.score"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierExp"
+                  },
+                  "parameters": [
+                    "\"playerdata\"",
+                    "\"score\"",
+                    "maxscore"
+                  ]
                 }
               ]
             },
@@ -16434,6 +17605,16 @@
                 "dead",
                 "=",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "sstop",
+                "stop",
+                "="
               ]
             }
           ],
@@ -19872,6 +21053,16 @@
                 "dead",
                 "=",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "sstop",
+                "stop",
+                "="
               ]
             }
           ],
@@ -45281,6 +46472,149 @@
           "instances": []
         }
       ]
+    },
+    {
+      "author": "Arthur Pacaud (arthuro555)",
+      "category": "Input",
+      "extensionNamespace": "",
+      "fullName": "Back button",
+      "gdevelopVersion": ">=5.5.222",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWtleWJvYXJkLWJhY2tzcGFjZSIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0yMSwxMUg2LjgzTDEwLjQxLDcuNDFMOSw2TDMsMTJMOSwxOEwxMC40MSwxNi41OEw2LjgzLDEzSDIxVjExWiIgLz48L3N2Zz4=",
+      "name": "BackButton",
+      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/keyboard-backspace.svg",
+      "shortDescription": "Adds interactions with the back button.",
+      "version": "1.0.0",
+      "description": "Prevents the back button from quitting the game and provides a condition to check when it's pressed (to allow customising its behavior).",
+      "origin": {
+        "identifier": "BackButton",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "back",
+        "mobile",
+        "button",
+        "input"
+      ],
+      "authorIds": [
+        "ZgrsWuRTAkXgeuPV9bo0zuEcA2w1"
+      ],
+      "dependencies": [],
+      "globalVariables": [],
+      "sceneVariables": [],
+      "eventsFunctions": [
+        {
+          "fullName": "",
+          "functionType": "Action",
+          "name": "onFirstSceneLoaded",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "gdjs.evtTools.back_button = {",
+                "    triggered: false,",
+                "    _popStateListener: (event) => {",
+                "        gdjs.evtTools.back_button.triggered = true;",
+                "        history.pushState(\"\", \"\"); // Push a new fake state as the old one was popped",
+                "    }",
+                "};",
+                "",
+                "// Handle back button on the web",
+                "history.pushState(\"\", \"\"); // Push a fake state to prevent switching page when clicking on back",
+                "window.addEventListener('popstate', gdjs.evtTools.back_button._popStateListener);",
+                "",
+                "// Handle back button on cordova",
+                "document.addEventListener(\"backbutton\", e => {",
+                "    e.preventDefault();",
+                "    gdjs.evtTools.back_button.triggered = true;",
+                "}, false); ",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ],
+          "parameters": [],
+          "objectGroups": []
+        },
+        {
+          "description": "Triggers whenever the player presses the back button.",
+          "fullName": "Back button is pressed",
+          "functionType": "Condition",
+          "name": "onBackButtonPressed",
+          "sentence": "Back button is pressed",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "eventsFunctionContext.returnValue = gdjs.evtTools.back_button.triggered;",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ],
+          "parameters": [],
+          "objectGroups": []
+        },
+        {
+          "description": "This simulates the normal action of the back button. \nThis action will quit the app when in a mobile app, and go back to the previous page when in a web browser.",
+          "fullName": "Trigger back button",
+          "functionType": "Action",
+          "name": "doDefault",
+          "sentence": "Simulate back button press",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "// Close the app on cordova, as this is the default behavior",
+                "if (navigator.app) {",
+                "    navigator.app.exitApp();",
+                "} else if (navigator.device && navigator.device.exitApp) {",
+                "    navigator.device.exitApp();",
+                "} else {",
+                "    // Go to previous page as it is the default on browsers",
+                "    // Remove the listener so new fake states don't get pushed",
+                "    window.removeEventListener('popstate', gdjs.evtTools.back_button._popStateListener);",
+                "    history.back(); // Remove the state that prevents going back",
+                "    history.back(); // Actually go back",
+                "}",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ],
+          "parameters": [],
+          "objectGroups": []
+        },
+        {
+          "fullName": "",
+          "functionType": "Action",
+          "name": "onScenePostEvents",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "gdjs.evtTools.back_button.triggered = false;",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ],
+          "parameters": [],
+          "objectGroups": []
+        }
+      ],
+      "eventsBasedBehaviors": [],
+      "eventsBasedObjects": []
     }
   ],
   "externalLayouts": [
