@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 230,
+    "build": 231,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -2159,6 +2159,46 @@
         "kind": "font",
         "metadata": "",
         "name": "..\\zh-cn.ttf",
+        "userAdded": false
+      },
+      {
+        "file": "Minecraft.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Minecraft.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Rare Achievement - Minecraft Sound Effect (HD)_[cut_1sec].mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Rare Achievement - Minecraft Sound Effect (HD)_[cut_1sec].mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Minecraft hit sound - 1080p60fps_[cut_0sec].mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Minecraft hit sound - 1080p60fps_[cut_0sec].mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Minecraft Menu Button Sound Effect ｜ Sounffex_[cut_0sec].mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Minecraft Menu Button Sound Effect ｜ Sounffex_[cut_0sec].mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
         "userAdded": false
       }
     ],
@@ -11156,6 +11196,18 @@
                 "",
                 "1"
               ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "Minecraft.mp3",
+                "yes",
+                "70",
+                "1"
+              ]
             }
           ],
           "events": [
@@ -11342,6 +11394,18 @@
                 "",
                 "1"
               ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "Minecraft Menu Button Sound Effect ｜ Sounffex_[cut_0sec].mp3",
+                "no",
+                "70",
+                "1"
+              ]
             }
           ]
         },
@@ -11431,6 +11495,18 @@
               "parameters": [
                 "",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "Minecraft Menu Button Sound Effect ｜ Sounffex_[cut_0sec].mp3",
+                "no",
+                "70",
+                "1"
               ]
             }
           ]
@@ -11563,6 +11639,18 @@
               "parameters": [
                 "",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "Minecraft Menu Button Sound Effect ｜ Sounffex_[cut_0sec].mp3",
+                "no",
+                "70",
+                "1"
               ]
             }
           ]
@@ -15121,6 +15209,18 @@
                 "",
                 "1"
               ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "Minecraft.mp3",
+                "yes",
+                "70",
+                "1"
+              ]
             }
           ],
           "events": [
@@ -15184,6 +15284,21 @@
                     "",
                     "\"teach\"",
                     ""
+                  ]
+                }
+              ]
+            },
+            {
+              "disabled": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "DeleteFichier"
+                  },
+                  "parameters": [
+                    "\"playerdata\""
                   ]
                 }
               ]
@@ -15324,6 +15439,18 @@
                 "",
                 "1"
               ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "Minecraft Menu Button Sound Effect ｜ Sounffex_[cut_0sec].mp3",
+                "no",
+                "70",
+                "1"
+              ]
             }
           ]
         },
@@ -15413,6 +15540,18 @@
               "parameters": [
                 "",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "Minecraft Menu Button Sound Effect ｜ Sounffex_[cut_0sec].mp3",
+                "no",
+                "70",
+                "1"
               ]
             }
           ]
@@ -15527,6 +15666,18 @@
               "parameters": [
                 "",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "Minecraft Menu Button Sound Effect ｜ Sounffex_[cut_0sec].mp3",
+                "no",
+                "70",
+                "1"
               ]
             }
           ]
@@ -15657,6 +15808,18 @@
               "parameters": [
                 "",
                 "\"Untitled scene\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "Minecraft Menu Button Sound Effect ｜ Sounffex_[cut_0sec].mp3",
+                "no",
+                "70",
+                "1"
               ]
             }
           ]
@@ -16730,6 +16893,18 @@
             },
             {
               "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "Rare Achievement - Minecraft Sound Effect (HD)_[cut_1sec].mp3",
+                "no",
+                "70",
+                "1"
+              ]
+            },
+            {
+              "type": {
                 "value": "Delete"
               },
               "parameters": [
@@ -17252,6 +17427,18 @@
                 "",
                 "1",
                 "0.5",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "Minecraft hit sound - 1080p60fps_[cut_0sec].mp3",
+                "no",
+                "70",
                 "1"
               ]
             }
@@ -20190,6 +20377,18 @@
               "parameters": [
                 "player",
                 "\"strong\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "Rare Achievement - Minecraft Sound Effect (HD)_[cut_1sec].mp3",
+                "no",
+                "70",
+                "1"
               ]
             },
             {
@@ -30086,6 +30285,18 @@
                 "",
                 "\"Untitled scene\"",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "Minecraft Menu Button Sound Effect ｜ Sounffex_[cut_0sec].mp3",
+                "no",
+                "70",
+                "1"
               ]
             },
             {
