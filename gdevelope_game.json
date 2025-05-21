@@ -16,7 +16,7 @@
     "pixelsRounding": false,
     "projectUuid": "60057c21-ec43-48ba-b510-9260cddec17d",
     "scaleMode": "letterbox",
-    "sizeOnStartupMode": "adaptWidth",
+    "sizeOnStartupMode": "scaleOuter",
     "templateSlug": "",
     "version": "1.0.0",
     "name": "gdevelope_game",
@@ -8255,6 +8255,48 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "lr8",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "手柄點擊Start退出",
+      "font": "zh-cn.ttf",
+      "textAlignment": "left",
+      "characterSize": 30,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "手柄點擊Start退出",
+        "font": "zh-cn.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 30,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -8268,6 +8310,9 @@
       },
       {
         "objectName": "quit"
+      },
+      {
+        "objectName": "lr8"
       },
       {
         "objectName": "stop"
@@ -8340,7 +8385,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.48700279281238507,
+        "zoomFactor": 0.16851307709771138,
         "windowMask": false
       },
       "objectsGroups": [
@@ -8923,8 +8968,8 @@
           "name": "stop",
           "persistentUuid": "078cd07f-1372-4324-b893-34fc98413ade",
           "width": 4127,
-          "x": -1343,
-          "y": -1520,
+          "x": -1349,
+          "y": -1515,
           "zOrder": 84,
           "numberProperties": [],
           "stringProperties": [],
@@ -8959,6 +9004,22 @@
           "x": 471,
           "y": 327,
           "zOrder": 85,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "ui",
+          "name": "lr8",
+          "persistentUuid": "6ad59153-4116-4425-9635-de047c021baa",
+          "width": 0,
+          "x": 24,
+          "y": 176,
+          "zOrder": 91,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -12709,7 +12770,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.2961321692564806,
+        "zoomFactor": 0.14757791784886598,
         "windowMask": false
       },
       "objectsGroups": [
@@ -12776,6 +12837,9 @@
             },
             {
               "name": "score"
+            },
+            {
+              "name": "lr8"
             }
           ]
         }
@@ -13181,12 +13245,12 @@
           "depth": 1,
           "height": 3866,
           "keepRatio": true,
-          "layer": "Layer",
+          "layer": "deadui",
           "name": "dead",
           "persistentUuid": "9de52c97-9a01-431b-95b7-2a34d649b5df",
           "width": 4127,
-          "x": -1216,
-          "y": -1514,
+          "x": -1252,
+          "y": -1518,
           "zOrder": 77,
           "numberProperties": [],
           "stringProperties": [],
@@ -13249,8 +13313,8 @@
           "name": "stop",
           "persistentUuid": "61564da6-56bc-42e0-ab81-40b1631a835d",
           "width": 4127,
-          "x": -1216,
-          "y": -1514,
+          "x": -1250,
+          "y": -1519,
           "zOrder": 84,
           "numberProperties": [],
           "stringProperties": [],
@@ -13285,6 +13349,22 @@
           "x": 470,
           "y": 545,
           "zOrder": 86,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "ui",
+          "name": "lr8",
+          "persistentUuid": "4391e749-ad62-4edc-9c41-d44444ba07a4",
+          "width": 0,
+          "x": 21,
+          "y": 180,
+          "zOrder": 91,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -15287,20 +15367,76 @@
                   ]
                 }
               ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Gamepads::C_Button_pressed"
+              },
+              "parameters": [
+                "",
+                "1",
+                "\"LB\"",
+                ""
+              ]
             },
             {
-              "disabled": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "DeleteFichier"
-                  },
-                  "parameters": [
-                    "\"playerdata\""
-                  ]
-                }
+              "type": {
+                "value": "Gamepads::C_Button_pressed"
+              },
+              "parameters": [
+                "",
+                "1",
+                "\"RB\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Button_pressed"
+              },
+              "parameters": [
+                "",
+                "1",
+                "\"LT\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Button_pressed"
+              },
+              "parameters": [
+                "",
+                "1",
+                "\"RT\"",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "end",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"teach\"",
+                ""
               ]
             }
           ]
@@ -15733,7 +15869,7 @@
                 "dead",
                 "Opacity",
                 "=",
-                "150"
+                "175"
               ]
             },
             {
