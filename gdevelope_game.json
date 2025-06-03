@@ -8362,9 +8362,20 @@
           "value": false
         },
         {
-          "name": "maxscore",
-          "type": "number",
-          "value": 0
+          "name": "player",
+          "type": "structure",
+          "children": [
+            {
+              "name": "maxscore",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "name",
+              "type": "string",
+              "value": ""
+            }
+          ]
         }
       ]
     },
@@ -8378,9 +8389,20 @@
           "value": false
         },
         {
-          "name": "maxscore",
-          "type": "number",
-          "value": 0
+          "name": "player",
+          "type": "structure",
+          "children": [
+            {
+              "name": "maxscore",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "name",
+              "type": "string",
+              "value": ""
+            }
+          ]
         }
       ]
     }
@@ -11298,9 +11320,9 @@
                 "value": "SendAsyncRequest"
               },
               "parameters": [
-                "\"http://127.0.0.1/postscore\"",
-                "ToJSON(ed)",
-                "\"GET\"",
+                "\"http://127.0.0.1/rank\"",
+                "\"\"",
+                "\"POST\"",
                 "\"application/json\"",
                 "gg",
                 ""
@@ -11312,73 +11334,7 @@
               },
               "parameters": [
                 "gg",
-                "ed2"
-              ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BooleanVariable"
-                  },
-                  "parameters": [
-                    "ed2.end",
-                    "True",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetBooleanVariable"
-                  },
-                  "parameters": [
-                    "ed.end",
-                    "True",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "ed.maxscore",
-                    "=",
-                    "ed2.maxscore"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BooleanVariable"
-                  },
-                  "parameters": [
-                    "ed.end",
-                    "True",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Untitled scene\"",
-                    ""
-                  ]
-                }
+                "ed"
               ]
             }
           ]
@@ -12832,7 +12788,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.14757791784886598,
+        "zoomFactor": 0.3164402384859279,
         "windowMask": false
       },
       "objectsGroups": [
@@ -12885,6 +12841,9 @@
             },
             {
               "name": "score3"
+            },
+            {
+              "name": "NewTextInput"
             }
           ]
         },
@@ -13316,8 +13275,8 @@
           "name": "dead",
           "persistentUuid": "9de52c97-9a01-431b-95b7-2a34d649b5df",
           "width": 4127,
-          "x": -1252,
-          "y": -1518,
+          "x": -1248,
+          "y": -1516,
           "zOrder": 77,
           "numberProperties": [],
           "stringProperties": [],
@@ -13432,6 +13391,22 @@
           "x": 21,
           "y": 180,
           "zOrder": 91,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "deadui",
+          "name": "NewTextInput",
+          "persistentUuid": "f2f7939f-e5e3-48fd-ab76-b83a0d54ebf4",
+          "width": 0,
+          "x": 502,
+          "y": 454,
+          "zOrder": 92,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -15128,6 +15103,33 @@
             "characterSize": 40,
             "color": "0;0;0"
           }
+        },
+        {
+          "assetStoreId": "",
+          "name": "NewTextInput",
+          "type": "TextInput::TextInputObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "initialValue": "",
+            "placeholder": "輸入玩家名稱",
+            "fontResourceName": "",
+            "fontSize": 20,
+            "inputType": "text",
+            "textColor": "0;0;0",
+            "fillColor": "255;255;255",
+            "fillOpacity": 255,
+            "borderColor": "0;0;0",
+            "borderOpacity": 255,
+            "borderWidth": 1,
+            "readOnly": false,
+            "disabled": false,
+            "paddingX": 2,
+            "paddingY": 1,
+            "textAlign": "left",
+            "maxLength": "20"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -15204,6 +15206,9 @@
           },
           {
             "objectName": "Press_A_to_restart"
+          },
+          {
+            "objectName": "NewTextInput"
           }
         ]
       },
@@ -15366,104 +15371,6 @@
                 "70",
                 "1"
               ]
-            },
-            {
-              "type": {
-                "value": "SendAsyncRequest"
-              },
-              "parameters": [
-                "\"http://127.0.0.1/postscore\"",
-                "ToJSON(ed)",
-                "\"GET\"",
-                "\"application/json\"",
-                "gg",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "JSONToVariableStructure2"
-              },
-              "parameters": [
-                "gg",
-                "ed2"
-              ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BooleanVariable"
-                  },
-                  "parameters": [
-                    "ed2.end",
-                    "True",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BooleanVariable"
-                  },
-                  "parameters": [
-                    "ed.end",
-                    "False",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetBooleanVariable"
-                  },
-                  "parameters": [
-                    "ed.end",
-                    "True",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "ed.maxscore",
-                    "=",
-                    "ed2.maxscore"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BooleanVariable"
-                  },
-                  "parameters": [
-                    "ed.end",
-                    "=",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"teach\"",
-                    ""
-                  ]
-                }
-              ]
             }
           ]
         },
@@ -15516,16 +15423,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "ed.end",
-                "False",
-                ""
-              ]
-            },
             {
               "type": {
                 "value": "Scene"
@@ -17792,6 +17689,12 @@
                     ">",
                     "ed.maxscore"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -17814,8 +17717,17 @@
                     "ToJSON(ed)",
                     "\"POST\"",
                     "\"application/json\"",
-                    "",
+                    "gg",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "JSONToVariableStructure2"
+                  },
+                  "parameters": [
+                    "gg",
+                    "ed"
                   ]
                 }
               ]
@@ -30533,16 +30445,6 @@
                 "no",
                 "70",
                 "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "ed.end",
-                "True",
-                ""
               ]
             }
           ]
